@@ -1,36 +1,53 @@
 using UnityEngine;
 using UnityEditor;
+using System.Diagnostics;
 
 public class CustomEditorWindow : EditorWindow
 {
     static CustomEditorWindow window;
 
+    public static int currentBlock;
+
+    // Block
+    cBlockManager blockManager;
+
     [MenuItem("Window/Editor/DebugWindow")]
     static void SetUp()
     {
         window = GetWindow<CustomEditorWindow>();
-
-        window.minSize = new Vector2(300, 300);
-        window.maxSize = new Vector2(1920, 1080);
     }
 
     void OnGUI()
     {
-        GUILayout.Label("Block Monitoring Tool", EditorStyles.boldLabel);
+        if (!blockManager)
+            blockManager = FindObjectOfType<cBlockManager>();
+
+        GUILayout.Label("Block Count", EditorStyles.boldLabel);
         GUILayout.Space(5);
 
-        EditorGUILayout.LabelField("현재 블록 개수 : ");
-        EditorGUILayout.LabelField("총 생성된 블록 수 : ");
-        EditorGUILayout.LabelField("총 파괴된 블록 수 : ");
-        EditorGUILayout.LabelField("FPS : ");
+        BlockCountLayout();
+
+        GUILayout.Space(5);
+        GUILayout.Label("Block Destroy", EditorStyles.boldLabel);
+        GUILayout.Space(5);
+
+        BlockDestroyLayout();
+
+        Repaint();
     }
 
-    //if (!window)
-    //{
-    //    // 새로운 윈도우를 생성
-    //    window = CreateInstance<CustomEditorWindow>();
-    //}
+    void BlockCountLayout()
+    {
+        EditorGUILayout.LabelField("현재 블록 개수 : ", blockManager.GetallBlocksCount.ToString());
+        EditorGUILayout.LabelField("현재 표면 블록 개수 : ", blockManager.GetSurfaceBlockCount.ToString());
+        EditorGUILayout.LabelField("현재 층 수 : ", blockManager.GetCurLine.ToString());
+    }
 
-    //// 윈도우를 화면에 출력
-    //window.Show();
+    void BlockDestroyLayout()
+    {
+        if (GUILayout.Button("Destroy_Surface"))
+            blockManager.DestroyBlock();
+        if (GUILayout.Button("Destroy_Surface x 5"))
+            blockManager.DestroyBlockX5();
+    }
 }
