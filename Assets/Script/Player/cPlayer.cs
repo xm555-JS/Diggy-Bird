@@ -5,16 +5,41 @@ using UnityEngine;
 public class cPlayer : MonoBehaviour
 {
     [SerializeField] FloatingJoystick joystick;
+    Rigidbody rigid;
+    Animator anim;
+    Vector2 input;
+    float speed = 5f;
+    float fallingSpeed = 0.2f;
 
-    //float speed = 5f;
+    void Start()
+    {
+        rigid = GetComponent<Rigidbody>();
+        rigid.freezeRotation = true;
+
+        anim = GetComponent<Animator>();
+    }
 
     void Update()
     {
-        Vector2 input = new Vector2(joystick.input.x, joystick.input.y); 
+        input = new Vector2(-joystick.input.x, -joystick.input.y);
+        Vector3 forward = new Vector3(input.x, 0f, input.y);
+        //transform.forward = Vector3.Lerp(transform.forward, forward, Time.deltaTime * 3f);
+        transform.forward = forward;
+        // 애니메이션 전환
+        anim.SetFloat("isWalk", input.magnitude);
+        anim.SetFloat("isFly", rigid.velocity.y);
     }
 
-    //void FixedUpdate()
-    //{
-        
-    //}
+    void FixedUpdate()
+    {
+        Vector3 dir = new Vector3(input.normalized.x, 0f, input.normalized.y);
+
+        if (!Physics.Raycast(transform.position, Vector3.down, 0.5f, LayerMask.GetMask("Ground")))
+            dir.y = rigid.velocity.y * fallingSpeed;
+        else
+            dir.y = 0f;
+
+
+        rigid.velocity = dir * speed;
+    }
 }
