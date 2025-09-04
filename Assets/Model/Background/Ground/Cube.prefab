@@ -111,3 +111,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
+  food: {fileID: 4366167363725185546, guid: 14a68cc3799098c4e87002232a229e1e, type: 3}

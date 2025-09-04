@@ -24,7 +24,8 @@ public class cPlayer : MonoBehaviour
         input = new Vector2(-joystick.input.x, -joystick.input.y);
         Vector3 forward = new Vector3(input.x, 0f, input.y);
         //transform.forward = Vector3.Lerp(transform.forward, forward, Time.deltaTime * 3f);
-        transform.forward = forward;
+        if (forward != Vector3.zero)
+            transform.forward = forward;
         // 애니메이션 전환
         anim.SetFloat("isWalk", input.magnitude);
         anim.SetFloat("isFly", rigid.velocity.y);

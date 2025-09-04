@@ -6,6 +6,7 @@ public class cBlockManager : MonoBehaviour
 {
     [SerializeField] GameObject block;
     [SerializeField] GameObject blockParent;
+    [SerializeField] GameObject mantle;
 
     Queue<GameObject> allBlocks = new Queue<GameObject>();
     List<GameObject> surfaceBlocks = new List<GameObject>();
@@ -69,6 +70,8 @@ public class cBlockManager : MonoBehaviour
                 maxLine++;
                 curLine++;
                 InstanceBlock(maxLine);
+
+                mantle.transform.position = new Vector3(mantle.transform.position.x, mantle.transform.position.y - 0.2f, mantle.transform.position.z);
             }
             yield return null;
         }
@@ -88,6 +91,7 @@ public class cBlockManager : MonoBehaviour
         foreach (var block in surfaceBlocks)
         {
             cBlock blockCom = block.GetComponent<cBlock>();
+            blockCom.InstanteFood();
             blockCom.OnDestroyed -= HandleBlockDestory;
             Destroy(block);
         }
