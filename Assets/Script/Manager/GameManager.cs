@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    void Start()
+    static public GameManager instance;
+    public cPlayer player;
+
+    void Awake()
     {
         Application.targetFrameRate = 60;
+
+        instance = this;
     }
 }

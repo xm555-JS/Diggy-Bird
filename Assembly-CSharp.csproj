@@ -59,7 +59,10 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Player\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Script\Manager\SkillManager.cs" />
     <Compile Include="Assets\Script\Food\cFood.cs" />
+    <Compile Include="Assets\Script\cMagnatic.cs" />
+    <Compile Include="Assets\Script\Player\cArea.cs" />
     <Compile Include="Assets\Model\Player\Quirky Series - Birds Bundle\_Scripts\Demo.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Script\Block\cBlockManager.cs" />
@@ -67,6 +70,7 @@
     <Compile Include="Assets\Script\Player\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Script\cResolution.cs" />
+    <Compile Include="Assets\Script\cSKillUI.cs" />
     <Compile Include="Assets\Script\Manager\GameManager.cs" />
     <Compile Include="Assets\Script\Block\cBlock.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />

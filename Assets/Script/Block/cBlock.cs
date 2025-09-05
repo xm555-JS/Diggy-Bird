@@ -10,6 +10,7 @@ public class cBlock : MonoBehaviour
     public event System.Action<cBlock> OnDestroyed;
 
     [SerializeField] GameObject food;
+    [SerializeField] ParticleSystem popParticle;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -20,6 +21,8 @@ public class cBlock : MonoBehaviour
         {
             InstanteFood();
 
+            InstanteParticle();
+
             OnDestroyed?.Invoke(this);
             Destroy(gameObject);
         }
@@ -29,5 +32,11 @@ public class cBlock : MonoBehaviour
     {
         GameObject insFood = Instantiate(food);
         insFood.transform.position = transform.position;
+    }
+
+    public void InstanteParticle()
+    {
+        ParticleSystem particle = Instantiate(popParticle);
+        particle.transform.position = transform.position;
     }
 }

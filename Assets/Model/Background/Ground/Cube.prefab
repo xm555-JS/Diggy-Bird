@@ -112,3 +112,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 0
   food: {fileID: 4366167363725185546, guid: 14a68cc3799098c4e87002232a229e1e, type: 3}
+  popParticle: {fileID: 3206956274950704101, guid: 0a3a9bc7ca537934090cf7718cb25186, type: 3}

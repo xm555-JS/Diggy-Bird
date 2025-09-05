@@ -5,9 +5,11 @@ using UnityEngine;
 public class cPlayer : MonoBehaviour
 {
     [SerializeField] FloatingJoystick joystick;
+    [SerializeField] GameObject area;
     Rigidbody rigid;
     Animator anim;
     Vector2 input;
+    int foodCount = 0;
     float speed = 5f;
     float fallingSpeed = 0.2f;
 
@@ -40,7 +42,18 @@ public class cPlayer : MonoBehaviour
         else
             dir.y = 0f;
 
-
         rigid.velocity = dir * speed;
+    }
+
+    public void OnAreaCollider()
+    {
+        SphereCollider collider = area.GetComponent<SphereCollider>();
+        collider.enabled = true;
+    }
+
+    public void OffAreaCollider()
+    {
+        SphereCollider collider = area.GetComponent<SphereCollider>();
+        collider.enabled = false;
     }
 }

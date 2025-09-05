@@ -92,6 +92,7 @@ public class cBlockManager : MonoBehaviour
         {
             cBlock blockCom = block.GetComponent<cBlock>();
             blockCom.InstanteFood();
+            blockCom.InstanteParticle();
             blockCom.OnDestroyed -= HandleBlockDestory;
             Destroy(block);
         }
