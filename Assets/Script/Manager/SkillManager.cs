@@ -7,8 +7,8 @@ public class SkillManager : MonoBehaviour
     static public SkillManager instance;
 
     int diggySkill = 0;
-    int magneticSkill = 5;
-    int hasteSkill = 5;
+    int magneticSkill = 0;
+    int hasteSkill = 0;
 
     public void DiggySkillUp() { diggySkill++; }
     public void DiggySkillDown() { diggySkill--; }

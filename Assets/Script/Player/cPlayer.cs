@@ -9,7 +9,7 @@ public class cPlayer : MonoBehaviour
     Rigidbody rigid;
     Animator anim;
     Vector2 input;
-    int foodCount = 0;
+    //int foodCount = 0;
     float speed = 5f;
     float fallingSpeed = 0.2f;
 
@@ -55,5 +55,15 @@ public class cPlayer : MonoBehaviour
     {
         SphereCollider collider = area.GetComponent<SphereCollider>();
         collider.enabled = false;
+    }
+
+    public void SpeedUp()
+    {
+        speed = 10f;
+    }
+
+    public void ReturnSpeed()
+    {
+        speed = 5f;
     }
 }

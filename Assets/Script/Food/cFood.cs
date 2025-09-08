@@ -5,7 +5,7 @@ using UnityEngine;
 public class cFood : MonoBehaviour
 {
     Rigidbody rigid;
-    BoxCollider collider;
+    BoxCollider boxCollider;
     bool isEat = false;
     bool isVacuum = false;
     float time = 0f;
@@ -21,8 +21,8 @@ public class cFood : MonoBehaviour
         rigid = GetComponent<Rigidbody>();
         rigid.AddForce(Vector3.up * power, ForceMode.Impulse);
 
-        collider = GetComponent<BoxCollider>();
-        collider.enabled = false;
+        boxCollider = GetComponent<BoxCollider>();
+        boxCollider.enabled = false;
     }
 
     void Update()
@@ -30,7 +30,7 @@ public class cFood : MonoBehaviour
         time += Time.deltaTime;
         if (time > 0.5f)
         {
-            collider.enabled = true;
+            boxCollider.enabled = true;
 
             Debug.DrawRay(transform.position, Vector3.down, Color.red);
             if (Physics.Raycast(transform.position, Vector3.down, 0.5f, LayerMask.GetMask("Ground")))
