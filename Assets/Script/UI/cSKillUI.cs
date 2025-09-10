@@ -48,7 +48,7 @@ public class cSKillUI : MonoBehaviour
                 break;
         }
 
-        if (skillCount == 0)
+        if (skillCount <= 0)
         {
             btn.interactable = false;
             skillCountImg.enabled = false;

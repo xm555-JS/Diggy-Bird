@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.32f1 (3b9dae9532f5) revision 3906990'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'ko' Physical Memory: 6091 MB
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'ko' Physical Memory: 32375 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity 2021.3.32f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.3.32f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker2
 -projectPath
-C:/Users/은아/Desktop/Diggy-Bird
+C:/Users/xm159/OneDrive/Desktop/Diggy Bird/Diggy Bird
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-49936
-Successfully changed project path to: C:/Users/은아/Desktop/Diggy-Bird
-C:/Users/은아/Desktop/Diggy-Bird
+58887
+Successfully changed project path to: C:/Users/xm159/OneDrive/Desktop/Diggy Bird/Diggy Bird
+C:/Users/xm159/OneDrive/Desktop/Diggy Bird/Diggy Bird
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,179 +47,122 @@ C:/Users/은아/Desktop/Diggy-Bird
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4908] Host "[IP] 192.168.0.241 [Port] 0 [Flags] 2 [Guid] 4274230937 [EditorId] 4274230937 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7UG22DS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [28664] Host "[IP] 192.168.219.103 [Port] 0 [Flags] 2 [Guid] 4134150636 [EditorId] 4134150636 [Version] 1048832 [Id] WindowsEditor(7,Jeaseong) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [4908] Host "[IP] 192.168.0.241 [Port] 0 [Flags] 2 [Guid] 4274230937 [EditorId] 4274230937 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7UG22DS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [28664] Host "[IP] 192.168.219.103 [Port] 0 [Flags] 2 [Guid] 4134150636 [EditorId] 4134150636 [Version] 1048832 [Id] WindowsEditor(7,Jeaseong) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 146.37 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 66.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.32f1 (3b9dae9532f5)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.32f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/은아/Desktop/Diggy-Bird/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.32f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/xm159/OneDrive/Desktop/Diggy Bird/Diggy Bird/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon(TM) Vega 8 Graphics (ID=0x15d8)
-    Vendor:   ATI
-    VRAM:     3045 MB
-    Driver:   30.0.13044.10001
+    Renderer: NVIDIA GeForce RTX 4060 Ti (ID=0x2803)
+    Vendor:   NVIDIA
+    VRAM:     16109 MB
+    Driver:   32.0.15.6094
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity 2021.3.32f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity 2021.3.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity 2021.3.32f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.32f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.32f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56940
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity 2021.3.32f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity 2021.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.021284 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.32f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010807 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 100.81 ms, found 3 plugins.
+Android Extension - Scanning For ADB Devices 295 ms
+Refreshing native plugins compatible for Editor in 42.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.151 seconds
+- Completed reload, in  0.987 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1152ms)
-		BeginReloadAssembly (206ms)
+	ReloadAssembly (988ms)
+		BeginReloadAssembly (82ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (747ms)
-			LoadAssemblies (200ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (727ms)
+			LoadAssemblies (80ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (191ms)
+			SetupTypeCache (193ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (440ms)
+			RebuildScriptCaches (16ms)
+			SetupLoadedEditorAssemblies (487ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (137ms)
+				InitializePlatformSupportModulesInManaged (356ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (101ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (130ms)
-				ProcessInitializeOnLoadMethodAttributes (70ms)
+				RefreshPlugins (42ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (47ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.015430 seconds.
+Registered in 0.016302 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  2.354 seconds
+- Completed reload, in  1.143 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2356ms)
-		BeginReloadAssembly (308ms)
+	ReloadAssembly (1144ms)
+		BeginReloadAssembly (100ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (14ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1803ms)
-			LoadAssemblies (269ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (965ms)
+			LoadAssemblies (95ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (444ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (87ms)
-			SetupLoadedEditorAssemblies (1045ms)
+			SetupTypeCache (249ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (589ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (36ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (155ms)
-				ProcessInitializeOnLoadAttributes (783ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
-				AfterProcessingInitializeOnLoad (27ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (489ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.25 seconds
-Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3131 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (46.4 KB). Loaded Objects now: 3597.
-Memory consumption went from 115.9 MB to 115.8 MB.
-Total: 4.727200 ms (FindLiveObjects: 0.479100 ms CreateObjectMapping: 0.268100 ms MarkObjects: 3.842800 ms  DeleteObjects: 0.135500 ms)
+Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (46.5 KB). Loaded Objects now: 3623.
+Memory consumption went from 121.3 MB to 121.2 MB.
+Total: 2.693900 ms (FindLiveObjects: 0.384800 ms CreateObjectMapping: 0.081800 ms MarkObjects: 2.158100 ms  DeleteObjects: 0.068500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.018299 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  2.953 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2954ms)
-		BeginReloadAssembly (348ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (73ms)
-		EndReloadAssembly (2394ms)
-			LoadAssemblies (267ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (648ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (112ms)
-			SetupLoadedEditorAssemblies (1307ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (64ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (182ms)
-				ProcessInitializeOnLoadAttributes (959ms)
-				ProcessInitializeOnLoadMethodAttributes (57ms)
-				AfterProcessingInitializeOnLoad (42ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3121 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (21.9 KB). Loaded Objects now: 3600.
-Memory consumption went from 115.2 MB to 115.2 MB.
-Total: 8.877100 ms (FindLiveObjects: 0.649600 ms CreateObjectMapping: 0.780400 ms MarkObjects: 7.365800 ms  DeleteObjects: 0.079000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -229,143 +172,945 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 5716.855758 seconds.
-  path: Assets/Script/cMagnatic.cs
-  artifactKey: Guid(0254cbeb67bea0c4cb469c85ea9af14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 1188954.816234 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon49.png
+  artifactKey: Guid(8a5a139b0ae81402d82c6f476a72fee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Script/cMagnatic.cs using Guid(0254cbeb67bea0c4cb469c85ea9af14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24378a8ac127f0b6b8ebda11e2924782') in 0.126412 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.018550 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  2.593 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2594ms)
-		BeginReloadAssembly (621ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (61ms)
-		EndReloadAssembly (1775ms)
-			LoadAssemblies (546ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (478ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (84ms)
-			SetupLoadedEditorAssemblies (961ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (54ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (149ms)
-				ProcessInitializeOnLoadAttributes (698ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
-				AfterProcessingInitializeOnLoad (29ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3120 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 19 unused Assets / (22.0 KB). Loaded Objects now: 3602.
-Memory consumption went from 115.2 MB to 115.2 MB.
-Total: 4.744900 ms (FindLiveObjects: 0.429400 ms CreateObjectMapping: 0.171100 ms MarkObjects: 4.105000 ms  DeleteObjects: 0.037200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon49.png using Guid(8a5a139b0ae81402d82c6f476a72fee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b9677ff3fe8a156524876676f0662dd') in 0.105552 seconds 
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 23.296592 seconds.
-  path: Assets/Script
-  artifactKey: Guid(a1253398bbefb3647aedd309f1111dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000018 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon57.png
+  artifactKey: Guid(caa625d3d80a94cc1ab4e223a70fe216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Script using Guid(a1253398bbefb3647aedd309f1111dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f37f362792e76e776909c1bc9ff34b') in 0.025842 seconds 
-Number of asset objects unloaded after import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon57.png using Guid(caa625d3d80a94cc1ab4e223a70fe216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35d022368acf5b79ff715b2bb09a24f') in 0.025996 seconds 
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 4.497848 seconds.
-  path: Assets/Script/UI
-  artifactKey: Guid(c5fde08f4ab185143a153a53b7946b74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000024 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon116.png
+  artifactKey: Guid(44bc061fd4b1147a0b1a46fdf0a74c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Script/UI using Guid(c5fde08f4ab185143a153a53b7946b74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '213f4feb5d5ecaad4828e2eee7249158') in 0.021564 seconds 
-Number of asset objects unloaded after import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon116.png using Guid(44bc061fd4b1147a0b1a46fdf0a74c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7194c3a840a9b2f0da34c72db75321ec') in 0.025030 seconds 
+Number of asset objects unloaded after import = 3
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.019527 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  2.617 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2618ms)
-		BeginReloadAssembly (313ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (2090ms)
-			LoadAssemblies (250ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (492ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (71ms)
-			SetupLoadedEditorAssemblies (1271ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (44ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (122ms)
-				ProcessInitializeOnLoadAttributes (1030ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
-				AfterProcessingInitializeOnLoad (30ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3120 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (21.9 KB). Loaded Objects now: 3605.
-Memory consumption went from 115.2 MB to 115.2 MB.
-Total: 4.235400 ms (FindLiveObjects: 0.425300 ms CreateObjectMapping: 0.148200 ms MarkObjects: 3.616600 ms  DeleteObjects: 0.043200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon91.png
+  artifactKey: Guid(b222276a27a6e4fa1b8fbb32c1c31eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon91.png using Guid(b222276a27a6e4fa1b8fbb32c1c31eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73d72ae9b02b477a8f99d8f1e3051c79') in 0.023894 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon104.png
+  artifactKey: Guid(da5cb48f9f55241d3826a8fac3453304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon104.png using Guid(da5cb48f9f55241d3826a8fac3453304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd79ca63febe70f7190cfae25ddc86da2') in 0.025137 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon117.png
+  artifactKey: Guid(6b3e8c6ade02649f384a054507650140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon117.png using Guid(6b3e8c6ade02649f384a054507650140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6cdbc3f0ecff3b19770a53e914371be') in 0.024991 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon118.png
+  artifactKey: Guid(b8b97930e4da841ae90ba344e1faab09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon118.png using Guid(b8b97930e4da841ae90ba344e1faab09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6751040d318620ff372392fdbf4792d4') in 0.026673 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon126.png
+  artifactKey: Guid(4944d5038c03e483aa3fe3feef365335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon126.png using Guid(4944d5038c03e483aa3fe3feef365335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59f2e9c1ece53cdfc9c813f0f85ba7aa') in 0.026488 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon69.png
+  artifactKey: Guid(bb4a5ded2024041098c9ed03198da0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon69.png using Guid(bb4a5ded2024041098c9ed03198da0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f51e96a40f083bb67d6fe840400961c') in 0.025013 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon52.png
+  artifactKey: Guid(88ec87e63a97b43a9b2272acc73145ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon52.png using Guid(88ec87e63a97b43a9b2272acc73145ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e9a3346c4151a6c434915d948e572e5') in 0.025211 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon70.png
+  artifactKey: Guid(76e419ef952884282974c4cc29e416c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon70.png using Guid(76e419ef952884282974c4cc29e416c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7bff54a6d87152970acbf6540b6ece9') in 0.024469 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon81.png
+  artifactKey: Guid(bfd78756c20ec437cbda0beea7bd9778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon81.png using Guid(bfd78756c20ec437cbda0beea7bd9778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '802ecc7b7b31becea1841de336025ae2') in 0.024641 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon112.png
+  artifactKey: Guid(cb3fa8af3844c4071ab9b6d187474d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon112.png using Guid(cb3fa8af3844c4071ab9b6d187474d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b37ff37b8982ce7103bbfb94fc5d29a8') in 0.026179 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon58.png
+  artifactKey: Guid(1e06d900555164ab6a9495031a28c0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon58.png using Guid(1e06d900555164ab6a9495031a28c0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5e3db865c08ba0b7e5d5677422465f4') in 0.022587 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon82.png
+  artifactKey: Guid(cbc3f43a6da86418aa57a4c7c2bf7bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon82.png using Guid(cbc3f43a6da86418aa57a4c7c2bf7bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2017b33fb795fe2265b61a9d14885091') in 0.023253 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon53.png
+  artifactKey: Guid(1a5f7b16c4771461c88019bedc2ef296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon53.png using Guid(1a5f7b16c4771461c88019bedc2ef296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84cb1521d95e43484c7c6e8c53d6de32') in 0.022361 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon120.png
+  artifactKey: Guid(c9d1fed2ecfdb46e99bb0cf2e6695393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon120.png using Guid(c9d1fed2ecfdb46e99bb0cf2e6695393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02b15c5ec1e0aba85911713f350abcff') in 0.022777 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon72.png
+  artifactKey: Guid(f8c78a8b55ae3422d9a80aeb788b770c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon72.png using Guid(f8c78a8b55ae3422d9a80aeb788b770c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb9017353f185eae9a3823cd62b59235') in 0.023716 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon93.png
+  artifactKey: Guid(d43590e83a5754a709346e5044e11579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon93.png using Guid(d43590e83a5754a709346e5044e11579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5877efd9f4efa9dbe008ce21ac26ef6e') in 0.022055 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon119.png
+  artifactKey: Guid(473d8c402f7b444d1809206f57cb6ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon119.png using Guid(473d8c402f7b444d1809206f57cb6ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3358d2fa454f993c4dd85c1d5998065') in 0.022996 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon75.png
+  artifactKey: Guid(1ce558e11f8414ddda84832e6360fd3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon75.png using Guid(1ce558e11f8414ddda84832e6360fd3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89f006d825672032504e18892eac7084') in 0.023128 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon79.png
+  artifactKey: Guid(b65ec611bb0f1474d9787a1f0c43cdd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon79.png using Guid(b65ec611bb0f1474d9787a1f0c43cdd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a57a3fc47826a26d1e48f0999889611b') in 0.023281 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon114.png
+  artifactKey: Guid(a25ffaef8c9004723b66733ec094ddae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon114.png using Guid(a25ffaef8c9004723b66733ec094ddae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43b9a946c2ad33378cc2d1fed96bffea') in 0.023411 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon64.png
+  artifactKey: Guid(c21ebef206be74f368079b5fa1d7df22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon64.png using Guid(c21ebef206be74f368079b5fa1d7df22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2fd64b0680b08723edb96cbb2c45889') in 0.022345 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.400794 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon130.png
+  artifactKey: Guid(16fd178e58abb4bdba7fa4862eaa34f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/05_System/Spum_Icon130.png using Guid(16fd178e58abb4bdba7fa4862eaa34f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6257ebd1c2ae5f1169cdd030439274d9') in 0.020107 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.741150 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon131.png
+  artifactKey: Guid(54583775bbbcd4bac91bbb56dcc9f146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon131.png using Guid(54583775bbbcd4bac91bbb56dcc9f146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '682b2603cb978774d3deec14612f6e76') in 0.028112 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon141.png
+  artifactKey: Guid(57af6e6fca89a429d9f89a713f20066d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon141.png using Guid(57af6e6fca89a429d9f89a713f20066d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1e0a835599051e306cc87ea50f63d30') in 0.022683 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon199.png
+  artifactKey: Guid(3c0582fc87aff4527b5ec0a9bd80b2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon199.png using Guid(3c0582fc87aff4527b5ec0a9bd80b2b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed033df69288da5d302a31fdadd5dbd') in 0.022821 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon169.png
+  artifactKey: Guid(c5c07c02e28264820905234f1bfae41b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon169.png using Guid(c5c07c02e28264820905234f1bfae41b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7ff9fdbed7a20f5f2b87859151be3f') in 0.022086 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon139.png
+  artifactKey: Guid(0f2203df76b1f4eb48b4009f4fae5b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon139.png using Guid(0f2203df76b1f4eb48b4009f4fae5b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39791fa9f0c77e1dfd33bf4a61ced05c') in 0.023779 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon142.png
+  artifactKey: Guid(93c3762afc833438983394e4e1c3894b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon142.png using Guid(93c3762afc833438983394e4e1c3894b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e82d9ccc5885de873ab08da7aeda10a7') in 0.023157 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon197.png
+  artifactKey: Guid(731023e2bf74d472896e4c521510d220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon197.png using Guid(731023e2bf74d472896e4c521510d220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '821f3c6611b1e7c2ace3977104ed6d03') in 0.023072 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon195.png
+  artifactKey: Guid(2c98dac543a494d769daab59d7ea9428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon195.png using Guid(2c98dac543a494d769daab59d7ea9428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef3554821845783fd1fcfe874b28e199') in 0.023276 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon171.png
+  artifactKey: Guid(71e21c9619ce14beba3b3128429314ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon171.png using Guid(71e21c9619ce14beba3b3128429314ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a786cf75513f8aeb9a98c292b142df92') in 0.023915 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon206.png
+  artifactKey: Guid(6ae189ef3373c439189a99c4395d3481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon206.png using Guid(6ae189ef3373c439189a99c4395d3481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dca3ade305ff0f771e7dbe7e3bcf56f') in 0.022697 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon166.png
+  artifactKey: Guid(3df3af5b3aba64c0aa071b66564456f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon166.png using Guid(3df3af5b3aba64c0aa071b66564456f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b31af3c7ac703334e2fb00422d05610') in 0.023230 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon149.png
+  artifactKey: Guid(2962919dbdcf54adbbad711f96bcba8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon149.png using Guid(2962919dbdcf54adbbad711f96bcba8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c88be397d9d1726d52f42c88bba6b8b') in 0.025424 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon184.png
+  artifactKey: Guid(c6f7b0a7820374f2aa4ae147921467f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon184.png using Guid(c6f7b0a7820374f2aa4ae147921467f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f215ca05462cc1298025c091f99db955') in 0.023226 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon154.png
+  artifactKey: Guid(93509f74b69c548dcadb725cdd73a6c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon154.png using Guid(93509f74b69c548dcadb725cdd73a6c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a2785f5b0ff8d3f8d507ec31b9d24c') in 0.022400 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon200.png
+  artifactKey: Guid(493d7d51216944e5db610a4faa46b53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon200.png using Guid(493d7d51216944e5db610a4faa46b53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '846339f1154d03809bd52f7582f30597') in 0.023619 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon148.png
+  artifactKey: Guid(a74ae587dc9c147d5b425cafb82b6610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon148.png using Guid(a74ae587dc9c147d5b425cafb82b6610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3850019a536a9ca49b3d6f4879bf4b4b') in 0.023069 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon205.png
+  artifactKey: Guid(19d34f795fd664f809a2188909adb619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon205.png using Guid(19d34f795fd664f809a2188909adb619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8931c5f4877fae550bb860a39eeb8783') in 0.022337 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon137.png
+  artifactKey: Guid(3b589ef7bf411401982bf6aedb9aa350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon137.png using Guid(3b589ef7bf411401982bf6aedb9aa350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4acd657d996328e8aa9ade364dadc75') in 0.023465 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon153.png
+  artifactKey: Guid(2ab974ff6b4be42c78510b55c3fb1f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon153.png using Guid(2ab974ff6b4be42c78510b55c3fb1f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c98f84db07f5a0b695a8a8d2a24b0f3') in 0.023148 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon183.png
+  artifactKey: Guid(4fc98be2ac5f248c18c42d932db072f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon183.png using Guid(4fc98be2ac5f248c18c42d932db072f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bc4647be71f51f57546ad90cc9d82a0') in 0.022221 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon168.png
+  artifactKey: Guid(f3d695878afb74e2f9ec029ef6b905dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon168.png using Guid(f3d695878afb74e2f9ec029ef6b905dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e79f7675fbbdd9e5c9221eb019cdd1df') in 0.024889 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon180.png
+  artifactKey: Guid(14095aad3736d42caa4ea528b13a79e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon180.png using Guid(14095aad3736d42caa4ea528b13a79e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beed9427e6dcf9920f7dacd90e70f717') in 0.023283 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon186.png
+  artifactKey: Guid(3fa05bfbbc81f4da8b43ecbbc7255063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon186.png using Guid(3fa05bfbbc81f4da8b43ecbbc7255063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd18fd217024e3f64161f870ba80b3102') in 0.023281 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon193.png
+  artifactKey: Guid(63313e343f61c48e083b862eb104e972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon193.png using Guid(63313e343f61c48e083b862eb104e972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '447bb99d993b6a128f49c7220c0991d2') in 0.022983 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon138.png
+  artifactKey: Guid(b13e4b90a302e434cb7ccc234e06b362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon138.png using Guid(b13e4b90a302e434cb7ccc234e06b362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650ba3d05d554e3286d556429bdc6471') in 0.023475 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon185.png
+  artifactKey: Guid(437b68d230903429fa6d3d8ab6db39e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/06_UI/Spum_Icon185.png using Guid(437b68d230903429fa6d3d8ab6db39e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3da98acbd753c1a8312f34a8963dbf0f') in 0.022420 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 97.404388 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon51.png
+  artifactKey: Guid(619c9d4dde7f94ee190283a3ff3a9806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon51.png using Guid(619c9d4dde7f94ee190283a3ff3a9806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9b1b142eef5c4046b73adf28977541e') in 0.025581 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_29.png
+  artifactKey: Guid(8e6beba2061ee41c3aa6a75102a0839b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_29.png using Guid(8e6beba2061ee41c3aa6a75102a0839b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbc5516ae5002e6221354a12840061cf') in 0.023268 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_17.png
+  artifactKey: Guid(b1f88a07f2e054c7eb0803ca4a02db3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_17.png using Guid(b1f88a07f2e054c7eb0803ca4a02db3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30dae613f2a496de66a2ad7858bb7401') in 0.023965 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_62.png
+  artifactKey: Guid(95a49f927de7a4732ab70827aedd4332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_62.png using Guid(95a49f927de7a4732ab70827aedd4332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fe91cce578e724712721c6510bebfeb') in 0.022757 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_44.png
+  artifactKey: Guid(59af344b0f6ea4414b150d8a19449bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_44.png using Guid(59af344b0f6ea4414b150d8a19449bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d52f949e2a7788a7c1d38933160f401') in 0.024502 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_6.png
+  artifactKey: Guid(9f587c538d4ab478e8e9d800533788f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_6.png using Guid(9f587c538d4ab478e8e9d800533788f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e51e65cf79f19ee40e88265641c5a2a') in 0.023655 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_54.png
+  artifactKey: Guid(3c147f65fb2a2423fbdbea69b5550094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_54.png using Guid(3c147f65fb2a2423fbdbea69b5550094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d860675d69fda385220014b70798771') in 0.022317 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_25.png
+  artifactKey: Guid(e97795eb5eec942129787ad80c1cd3b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_25.png using Guid(e97795eb5eec942129787ad80c1cd3b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b799a30767607499c4172536fee13c77') in 0.022442 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_63.png
+  artifactKey: Guid(ba3b3da58b23848d2bbf3baf384ca766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_63.png using Guid(ba3b3da58b23848d2bbf3baf384ca766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aec8ce15a3bf6bb0ae97b53debaa647') in 0.021737 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_38.png
+  artifactKey: Guid(2659a6db8aa72458a8deb613919319a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_38.png using Guid(2659a6db8aa72458a8deb613919319a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ee592657270628d8688405e814ba84') in 0.022709 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_18.png
+  artifactKey: Guid(3a2ed544599ea4525b7b9f7f8bc02f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_18.png using Guid(3a2ed544599ea4525b7b9f7f8bc02f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27d64581f38ce43556912dc7998b7da9') in 0.022945 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_14.png
+  artifactKey: Guid(875fd5536646349ff855b31a221af722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_14.png using Guid(875fd5536646349ff855b31a221af722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37fe507b6694cb9e43df0295685f05fa') in 0.023533 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_59.png
+  artifactKey: Guid(869e26b3b61bd49d68b721384e7cb5d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_59.png using Guid(869e26b3b61bd49d68b721384e7cb5d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1260cf8441d0bf0ce471afb5386b502e') in 0.022276 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_8.png
+  artifactKey: Guid(bc2a357d30f404978976c6aa0e1770fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_8.png using Guid(bc2a357d30f404978976c6aa0e1770fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99d9a08567157453f81f4f633b16cf0f') in 0.022974 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_39.png
+  artifactKey: Guid(00d91276c5703477baeb590095d6bb17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_39.png using Guid(00d91276c5703477baeb590095d6bb17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a367328ff1030b4a93c9f2f640c5665c') in 0.022296 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_15.png
+  artifactKey: Guid(e7e66245d492d4ad4bbe844f24821803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_15.png using Guid(e7e66245d492d4ad4bbe844f24821803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0ba103c374dedd20803cb7d24875aea') in 0.022600 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_58.png
+  artifactKey: Guid(accc7a41eb5ff447787d42f55056e9b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_58.png using Guid(accc7a41eb5ff447787d42f55056e9b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb5ba5628ae81f7f9894d8ff46df576b') in 0.021820 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_60.png
+  artifactKey: Guid(68ac01c0a068646a7974bbe4dfab6dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_60.png using Guid(68ac01c0a068646a7974bbe4dfab6dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a192a6e38c58d686a0205f8e8a947971') in 0.029176 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_22.png
+  artifactKey: Guid(183b6f85132774defa2bfb6735b2c4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_22.png using Guid(183b6f85132774defa2bfb6735b2c4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7952381786534038b01640e695c42805') in 0.024728 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_35.png
+  artifactKey: Guid(e3ee1546d2b984c65a4e24dea37c672c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_35.png using Guid(e3ee1546d2b984c65a4e24dea37c672c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9121c31d325f80029782618252f78d4e') in 0.022909 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_47.png
+  artifactKey: Guid(17cc37de38fba428ea80e7054606b59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_47.png using Guid(17cc37de38fba428ea80e7054606b59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e234413ed8069f9e1ee14cc010ea401c') in 0.023911 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_52.png
+  artifactKey: Guid(6a047fb55b5554419b5bb2ee553ff45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_52.png using Guid(6a047fb55b5554419b5bb2ee553ff45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee45388bdd186063813efb9a217cba9') in 0.023099 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_24.png
+  artifactKey: Guid(d705d001a0b604855854706783068070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_24.png using Guid(d705d001a0b604855854706783068070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b743a8770d6d0b0f74769cd9116d1d77') in 0.024386 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_16.png
+  artifactKey: Guid(e5d141c8b6d0a4cfe93f54b2c887f87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_16.png using Guid(e5d141c8b6d0a4cfe93f54b2c887f87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b98f36aee0939f1fb74e293142f72fe') in 0.022789 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_33.png
+  artifactKey: Guid(3c75a14c8732644e38cba8578aa6ac74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_33.png using Guid(3c75a14c8732644e38cba8578aa6ac74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08a606cb066bec6774ebd0e0191ca4b2') in 0.023868 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_64.png
+  artifactKey: Guid(a5dc81592914d4efbb36352521f932ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_64.png using Guid(a5dc81592914d4efbb36352521f932ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9105e620491610ba1159f5a90f3fe4c') in 0.023197 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_30.png
+  artifactKey: Guid(678a0ad4be47340d49403da6b930716c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_30.png using Guid(678a0ad4be47340d49403da6b930716c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8afb6085975026529801532e604d46bd') in 0.022241 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_46.png
+  artifactKey: Guid(78218201a8c4a4079971ecbe656a82a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_46.png using Guid(78218201a8c4a4079971ecbe656a82a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea246e247758faa42d36078fee5789a') in 0.023396 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_28.png
+  artifactKey: Guid(b6c1166dd38084d26bd99264492cbb79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_28.png using Guid(b6c1166dd38084d26bd99264492cbb79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bfa2f049508f584ec7ef13aa447ffef') in 0.023591 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_23.png
+  artifactKey: Guid(afacb48c4aaf24b91a94b80dcb0d8fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_23.png using Guid(afacb48c4aaf24b91a94b80dcb0d8fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '014139f73fe553cd2a269bd18068e1db') in 0.023004 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_41.png
+  artifactKey: Guid(ddf0c84adeefe4c2aa0c204320188af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_41.png using Guid(ddf0c84adeefe4c2aa0c204320188af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '714291b6e2cb6bdde56ff1c2e242d5e1') in 0.022956 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_34.png
+  artifactKey: Guid(5abe4e3db94f84da6b218e30d19566b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/02_Icons/2_Extra/Icon_34.png using Guid(5abe4e3db94f84da6b218e30d19566b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d8c9eaac9985c8e6478c6426f7356f') in 0.022547 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 9.385045 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon208.png
+  artifactKey: Guid(965b939d03aad40f6bf6195f202e8fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon208.png using Guid(965b939d03aad40f6bf6195f202e8fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1c8766a1ea449681c584c6c22384cb3') in 0.024498 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon247.png
+  artifactKey: Guid(d4f2153a57b104ff88d2dbdb6c3755b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon247.png using Guid(d4f2153a57b104ff88d2dbdb6c3755b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d642b8ecab80e99537ab3056894f411') in 0.021895 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon265.png
+  artifactKey: Guid(4a47740e119104095bf8d5c350f44ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon265.png using Guid(4a47740e119104095bf8d5c350f44ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f8e073232252001ea70ce7d3990e93') in 0.024737 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon263.png
+  artifactKey: Guid(8e78a8a76fd9e4168a4f8eca840d94ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon263.png using Guid(8e78a8a76fd9e4168a4f8eca840d94ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74a3d4db7bab09da294d2011b62ed5f7') in 0.023196 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon260.png
+  artifactKey: Guid(1740dce11ec6b49b0a55c366d617b1f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon260.png using Guid(1740dce11ec6b49b0a55c366d617b1f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1e10140f9ca345e97253ee0d3182a6f') in 0.023641 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon220.png
+  artifactKey: Guid(8d3568442d30643e69d9e34c1c2834eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon220.png using Guid(8d3568442d30643e69d9e34c1c2834eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998128b197ad85df7302fd71ce2bdf58') in 0.024644 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon231.png
+  artifactKey: Guid(44676ae07279248ee8b1764990b8e6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon231.png using Guid(44676ae07279248ee8b1764990b8e6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b031ed9a566610b118d26139b6f20b44') in 0.023111 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon237.png
+  artifactKey: Guid(8d7389c0dfc864a41a4102a96d06971f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon237.png using Guid(8d7389c0dfc864a41a4102a96d06971f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e01590c1bf6ab2b9c52f2a9ebfee414') in 0.024103 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon243.png
+  artifactKey: Guid(90b99731f9f08489cacdbe14adc44a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon243.png using Guid(90b99731f9f08489cacdbe14adc44a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b414715b54d0e7c5cc4ee52470e00b56') in 0.023839 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon262.png
+  artifactKey: Guid(9be830e55460a4a4f8cc45ff5343db82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon262.png using Guid(9be830e55460a4a4f8cc45ff5343db82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '204c9f14ac6c369226e7cadf60cd80ef') in 0.022579 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon235.png
+  artifactKey: Guid(d63136c2d745d4230927f0d5b7907cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon235.png using Guid(d63136c2d745d4230927f0d5b7907cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd6dbbabbaebbf02321ea707e7c05514') in 0.024194 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon270.png
+  artifactKey: Guid(fb4373af47fc546cba8d5bf572a69d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon270.png using Guid(fb4373af47fc546cba8d5bf572a69d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59784be73ea946af20df3af5a4cb3a5a') in 0.023471 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon244.png
+  artifactKey: Guid(60b5152b578da45c8ae47922dd10763e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon244.png using Guid(60b5152b578da45c8ae47922dd10763e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf87a1adc1720c27005e0d64bde650a') in 0.021807 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon211.png
+  artifactKey: Guid(a351e42dc615d48c8a3399456a53345f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon211.png using Guid(a351e42dc615d48c8a3399456a53345f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f02d2f5c6b6377b0c1134bbf18505841') in 0.023112 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon222.png
+  artifactKey: Guid(9285c5c3bfafc41a7b0ab20f75f1e7ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon222.png using Guid(9285c5c3bfafc41a7b0ab20f75f1e7ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96bf829822e390128b26a7bd789222cc') in 0.022892 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon246.png
+  artifactKey: Guid(a364150572c6b4dfa9c4319edfa8304d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon246.png using Guid(a364150572c6b4dfa9c4319edfa8304d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e639452fb9ab2998ce117b2d7382755d') in 0.023192 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon273.png
+  artifactKey: Guid(4ee45927732e9403aa47a132769c9924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon273.png using Guid(4ee45927732e9403aa47a132769c9924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ec677c3bdea99f4d0ad0103f1a102bd') in 0.023036 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon268.png
+  artifactKey: Guid(5424479ba83ec4f35a71058f73395799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon268.png using Guid(5424479ba83ec4f35a71058f73395799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a8e5e937102eb9c9ada555f081ae1c0') in 0.022788 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon277.png
+  artifactKey: Guid(a75b0d6f70a67483aaba678eec994c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon277.png using Guid(a75b0d6f70a67483aaba678eec994c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e48bd358a3e0467fb6674c8149fe079') in 0.023310 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon218.png
+  artifactKey: Guid(02621294d13f74b7f9dd99e1f6981677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon218.png using Guid(02621294d13f74b7f9dd99e1f6981677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000abc359093872ae04143f96739eb27') in 0.022864 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon221.png
+  artifactKey: Guid(2cd9e5e32bfb6485cb071223710c8557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon221.png using Guid(2cd9e5e32bfb6485cb071223710c8557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b700a9a5a5f95e886661564637112ff') in 0.022811 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon288.png
+  artifactKey: Guid(7a4f7cd981d4e4011b159632508ee0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon288.png using Guid(7a4f7cd981d4e4011b159632508ee0ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21dbbf4d2b1b2bc03be4f3498a1a00e9') in 0.022315 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon228.png
+  artifactKey: Guid(fbd570d39870f45528f8e0540c5e8ce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon228.png using Guid(fbd570d39870f45528f8e0540c5e8ce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b06bed58e3839898a1a4ae37ee323dd4') in 0.024498 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon266.png
+  artifactKey: Guid(8e9a5533b0a6344d4a267fdb742ef89c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon266.png using Guid(8e9a5533b0a6344d4a267fdb742ef89c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75dfac310c32388292f366b5ed5b9ba1') in 0.022797 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon259.png
+  artifactKey: Guid(d0521dba287854d5586d080169707d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon259.png using Guid(d0521dba287854d5586d080169707d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da5f7f18b8fc4eafa80ba25a0b55d09') in 0.023121 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon271.png
+  artifactKey: Guid(83d74ab53e8cd4611b857c52a4252027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon271.png using Guid(83d74ab53e8cd4611b857c52a4252027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '344b81d1e19f5c44eee371bbe7590b5b') in 0.023681 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon230.png
+  artifactKey: Guid(7372701a9cac64ab4a34c856e36db6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon230.png using Guid(7372701a9cac64ab4a34c856e36db6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5e01283380bd0eb915f7701f4af7f71') in 0.022663 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon224.png
+  artifactKey: Guid(13e9187e2d082455290203336d8a4dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon224.png using Guid(13e9187e2d082455290203336d8a4dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddf5c6c9e1ff05e126704be52e1cb475') in 0.023960 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.478805 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon289.png
+  artifactKey: Guid(6d88a066b63d34af29c77401e47cfba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/07_Resources/Spum_Icon289.png using Guid(6d88a066b63d34af29c77401e47cfba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31766c3baece71b676c6f1dc911e5637') in 0.022366 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 69.661647 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/01_Properties/Spum_Icon1.png
+  artifactKey: Guid(ec19b57ff2b9d4c8ea79f30947f223a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/01_Properties/Spum_Icon1.png using Guid(ec19b57ff2b9d4c8ea79f30947f223a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d6d6d78971d900ed421b08d06fc9d4') in 0.025634 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/01_Properties/Spum_Icon6.png
+  artifactKey: Guid(494b2ccb162414dfaa574390286012fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/01_Properties/Spum_Icon6.png using Guid(494b2ccb162414dfaa574390286012fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c898d97db7c701dfcb8c0d4acbe7fec0') in 0.025663 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/01_Properties/Spum_Icon8.png
+  artifactKey: Guid(96929d1b8536e412dbe8b2d2199e9701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/01_Properties/Spum_Icon8.png using Guid(96929d1b8536e412dbe8b2d2199e9701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de10b81109103983192ab10023689622') in 0.024567 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/01_Properties/Spum_Icon4.png
+  artifactKey: Guid(aa55327f8d23d4663bb446d19d4dafa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/01_Properties/Spum_Icon4.png using Guid(aa55327f8d23d4663bb446d19d4dafa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc1a7956545ea93658d86ea6d381881') in 0.023902 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/01_Properties/Spum_Icon3.png
+  artifactKey: Guid(697755bc4540f492b8766f3c4136bf43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/01_Properties/Spum_Icon3.png using Guid(697755bc4540f492b8766f3c4136bf43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04f50bfbe350995b626a22d851dfe3cf') in 0.022793 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/01_Properties/Spum_Icon7.png
+  artifactKey: Guid(53687cd7ed13e4e2facef27429077fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme2/01_Properties/Spum_Icon7.png using Guid(53687cd7ed13e4e2facef27429077fb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88773c1136e7ff8a128dd278b44b98e1') in 0.022071 seconds 
+Number of asset objects unloaded after import = 3
