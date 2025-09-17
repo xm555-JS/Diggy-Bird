@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class cBlockManager : MonoBehaviour
 {
-    [SerializeField] GameObject block;
     [SerializeField] GameObject blockParent;
     [SerializeField] GameObject mantle;
 
@@ -23,7 +22,7 @@ public class cBlockManager : MonoBehaviour
     public int GetallBlocksCount => allBlocks.Count;
     public int GetCurLine => curLine;
 
-    void Awake()
+    void Start()
     {
         for (int line = 0; line < blockLine; line++)
             InstanceBlock(line);
@@ -41,7 +40,8 @@ public class cBlockManager : MonoBehaviour
         {
             for (int colum = 0; colum < blockColum; colum++)
             {
-                GameObject instBlock = Instantiate(block, blockParent.transform);
+                GameObject instBlock = BlockPoolManager.instance.Get();
+                instBlock.transform.SetParent(blockParent.transform);
                 instBlock.transform.position = new Vector3(-16.49f - (colum * 3f), 0f - (line * 0.2f), 1.48f + (row * 3f));
                 allBlocks.Enqueue(instBlock);
             }
@@ -56,6 +56,7 @@ public class cBlockManager : MonoBehaviour
             cBlock block = surfaceBlock.GetComponent<cBlock>();
             block.OnDestroyed += HandleBlockDestory;
             block.state = BlockState.SURFACE;
+            block.ChangeMat();
             surfaceBlocks.Add(surfaceBlock);
         }
     }

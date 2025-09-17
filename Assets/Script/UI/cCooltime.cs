@@ -13,6 +13,8 @@ public class cCooltime : MonoBehaviour
 
     void Start()
     {
+        cooltimeImg.raycastTarget = false;
+
         btn = GetComponent<Button>();
         btn.onClick.AddListener(() => Cooltime());
     }
@@ -24,6 +26,8 @@ public class cCooltime : MonoBehaviour
 
     IEnumerator SetFillAmount()
     {
+        cooltimeImg.raycastTarget = true;
+
         cooltimeImg.fillAmount = 1f;
 
         float time = cooltime;
@@ -35,5 +39,6 @@ public class cCooltime : MonoBehaviour
         }
 
         onCooltimeEnd?.Invoke();
+        cooltimeImg.raycastTarget = false;
     }
 }

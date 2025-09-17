@@ -51,7 +51,10 @@ public class cFood : MonoBehaviour
     {
         if (other.CompareTag("Player") && isEat)
         {
-            Destroy(gameObject);
+            isVacuum = false;
+            isEat = false;
+            GameManager.instance.player.FoodCount = 1;
+            cFoodPool.pool.Release(gameObject);
         }
     }
 }

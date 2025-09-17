@@ -15,7 +15,7 @@ C:/Users/xm159/OneDrive/Desktop/Diggy Bird/Diggy Bird
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53639
+59818
 Successfully changed project path to: C:/Users/xm159/OneDrive/Desktop/Diggy Bird/Diggy Bird
 C:/Users/xm159/OneDrive/Desktop/Diggy Bird/Diggy Bird
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ C:/Users/xm159/OneDrive/Desktop/Diggy Bird/Diggy Bird
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [13024] Host "[IP] 192.168.219.103 [Port] 0 [Flags] 2 [Guid] 4179956168 [EditorId] 4179956168 [Version] 1048832 [Id] WindowsEditor(7,Jeaseong) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [11756] Host "[IP] 192.168.219.102 [Port] 0 [Flags] 2 [Guid] 2117133029 [EditorId] 2117133029 [Version] 1048832 [Id] WindowsEditor(7,Jeaseong) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [13024] Host "[IP] 192.168.219.103 [Port] 0 [Flags] 2 [Guid] 4179956168 [EditorId] 4179956168 [Version] 1048832 [Id] WindowsEditor(7,Jeaseong) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11756] Host "[IP] 192.168.219.102 [Port] 0 [Flags] 2 [Guid] 2117133029 [EditorId] 2117133029 [Version] 1048832 [Id] WindowsEditor(7,Jeaseong) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 60.37 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 58.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.32f1 (3b9dae9532f5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.32f1/Editor/Data/Resources/UnitySubsystems
@@ -68,40 +68,40 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.32f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.32f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56712
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.32f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011456 seconds.
+Registered in 0.012128 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 311 ms
-Refreshing native plugins compatible for Editor in 43.47 ms, found 3 plugins.
+Android Extension - Scanning For ADB Devices 276 ms
+Refreshing native plugins compatible for Editor in 46.24 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.789 seconds
+- Completed reload, in  0.787 seconds
 Domain Reload Profiling:
-	ReloadAssembly (789ms)
-		BeginReloadAssembly (87ms)
+	ReloadAssembly (788ms)
+		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (621ms)
-			LoadAssemblies (85ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (609ms)
+			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (70ms)
+			SetupTypeCache (81ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (17ms)
-			SetupLoadedEditorAssemblies (501ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (469ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (374ms)
+				InitializePlatformSupportModulesInManaged (339ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (44ms)
+				RefreshPlugins (46ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (50ms)
+				ProcessInitializeOnLoadAttributes (49ms)
 				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -109,127 +109,53 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.018912 seconds.
+Registered in 0.019589 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  1.100 seconds
+- Completed reload, in  1.118 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1100ms)
+	ReloadAssembly (1119ms)
 		BeginReloadAssembly (110ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (902ms)
-			LoadAssemblies (101ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (921ms)
+			LoadAssemblies (106ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (178ms)
+			SetupTypeCache (183ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (597ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (607ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (59ms)
-				ProcessInitializeOnLoadAttributes (494ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (506ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (46.5 KB). Loaded Objects now: 3623.
-Memory consumption went from 121.3 MB to 121.3 MB.
-Total: 2.331200 ms (FindLiveObjects: 0.209000 ms CreateObjectMapping: 0.055800 ms MarkObjects: 2.011100 ms  DeleteObjects: 0.054700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1189621.256763 seconds.
-  path: Assets/Script/Player/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Plain_Arrows.png
-  artifactKey: Guid(3bf6d9f920f7458448a390f80318ebe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Script/Player/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Plain_Arrows.png using Guid(3bf6d9f920f7458448a390f80318ebe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08e5c7c66c6b0420a5475e375edf5f74') in 0.097855 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Script/Player/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Ridged.png
-  artifactKey: Guid(08c1fa6351174a9439d97cfc9d3307cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Script/Player/Joystick Pack/Sprites/Vertical Backgrounds/Vertical_Ridged.png using Guid(08c1fa6351174a9439d97cfc9d3307cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7acc6fe0aa716369dbf7f764a83925f') in 0.036486 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.018563 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  1.210 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1211ms)
-		BeginReloadAssembly (144ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (979ms)
-			LoadAssemblies (119ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (207ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (614ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (59ms)
-				ProcessInitializeOnLoadAttributes (504ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
-				AfterProcessingInitializeOnLoad (14ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3152 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 39 unused Assets / (21.9 KB). Loaded Objects now: 3632.
-Memory consumption went from 120.7 MB to 120.7 MB.
-Total: 2.649500 ms (FindLiveObjects: 0.277500 ms CreateObjectMapping: 0.184500 ms MarkObjects: 2.157100 ms  DeleteObjects: 0.029700 ms)
+Unloading 3172 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (46.5 KB). Loaded Objects now: 3633.
+Memory consumption went from 121.6 MB to 121.5 MB.
+Total: 2.564500 ms (FindLiveObjects: 0.215700 ms CreateObjectMapping: 0.069200 ms MarkObjects: 2.213500 ms  DeleteObjects: 0.065600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -246,172 +172,100 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 827.704147 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/00_Basic/Boss_HP_Gauge1.png
-  artifactKey: Guid(3fc3d8e4f413940c1826742f79fb2cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 400847.506554 seconds.
+  path: Assets/Model/Background/SimpleNaturePack/Models
+  artifactKey: Guid(f2460ba6bbb1eee41b63499dcba676dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/00_Basic/Boss_HP_Gauge1.png using Guid(3fc3d8e4f413940c1826742f79fb2cfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f253c5366cc51fd75649e81d4690506') in 0.064945 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Model/Background/SimpleNaturePack/Models using Guid(f2460ba6bbb1eee41b63499dcba676dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a347330245a944439cca36b4f9a5589d') in 0.018145 seconds 
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/00_Basic/EXP_Gauge2.png
-  artifactKey: Guid(5246366cb404d423dbe5716974428e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.031883 seconds.
+  path: Assets/Model/Background/SimpleNaturePack/Models/Branch_01.fbx
+  artifactKey: Guid(5528351815fd4c04abf537f22c7e18f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/00_Basic/EXP_Gauge2.png using Guid(5246366cb404d423dbe5716974428e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed563e4dad242449625be1a39044334a') in 0.024773 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/00_Basic/MP_Gauge1.png
-  artifactKey: Guid(b377032f439f0402396eeddc2d5a22f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/00_Basic/MP_Gauge1.png using Guid(b377032f439f0402396eeddc2d5a22f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e0aca96576f4efdcd72ef6948f18602') in 0.023920 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/00_Basic/EXP_Gauge1.png
-  artifactKey: Guid(7691a402c40664e6f92428db847c46ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/00_Basic/EXP_Gauge1.png using Guid(7691a402c40664e6f92428db847c46ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8f5698e65bc40e8353c84f7184b5a5') in 0.024293 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/00_Basic/HP_Gauge2.png
-  artifactKey: Guid(7d37754838fc449fbbaaa8a63abeea14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/00_Basic/HP_Gauge2.png using Guid(7d37754838fc449fbbaaa8a63abeea14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b598550d1fef2ac06c36ce3f02acdf6') in 0.022788 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/00_Basic/EXP_Title.png
-  artifactKey: Guid(b422b3761d07f43e0abb1f48f1447678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/00_Basic/EXP_Title.png using Guid(b422b3761d07f43e0abb1f48f1447678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cc55866951945564bfd93083171c1de') in 0.022722 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/00_Basic/Image_Boss.png
-  artifactKey: Guid(bd71076d1572d40c081565b126193105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/00_Basic/Image_Boss.png using Guid(bd71076d1572d40c081565b126193105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b0d2a680d8bb784a22b8a566332fde') in 0.023748 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.752991 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Box_Basic1.png
-  artifactKey: Guid(0caab7442de494acb952be290ca9664b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Box_Basic1.png using Guid(0caab7442de494acb952be290ca9664b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ece0773b50f9a05f759aec844231246') in 0.024608 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Model/Background/SimpleNaturePack/Models/Branch_01.fbx using Guid(5528351815fd4c04abf537f22c7e18f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf40fb4741146aa6fc58adcf14fb2d13') in 0.126981 seconds 
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
   Time since last request: 0.000015 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Button_Icon2.png
-  artifactKey: Guid(4e3d7c0617464404fbe0b2022cfd2079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  path: Assets/Model/Background/SimpleNaturePack/Models/Tree_04.fbx
+  artifactKey: Guid(83e8d2542718a2e49a73d71c3a5fc685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Button_Icon2.png using Guid(4e3d7c0617464404fbe0b2022cfd2079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2c1c58e3137e42c7d84a1e47e4c11d4') in 0.023776 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Button_Basic1_WS.png
-  artifactKey: Guid(dd0e9d0d872dd4d009bcb6bde72e2e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Button_Basic1_WS.png using Guid(dd0e9d0d872dd4d009bcb6bde72e2e60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d45fd9d37cd781d9ca1cd1a1ac09bd7') in 0.022849 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Button_X_WS.png
-  artifactKey: Guid(0a00239ab451b478e942d6c1fc7057d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Button_X_WS.png using Guid(0a00239ab451b478e942d6c1fc7057d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06b7b747cc439d0fe1308e62c172ad2f') in 0.021992 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Model/Background/SimpleNaturePack/Models/Tree_04.fbx using Guid(83e8d2542718a2e49a73d71c3a5fc685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5ae0f8654ccaba72d0c6d5ec32dd3f7') in 0.030763 seconds 
+Number of asset objects unloaded after import = 15
 ========================================================================
 Received Import Request.
   Time since last request: 0.000015 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Button_Basic2_15x15.png
-  artifactKey: Guid(35082ee2bb31c4a81bea04a13d829031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  path: Assets/Model/Background/SimpleNaturePack/Models/Rock_05.fbx
+  artifactKey: Guid(fa2e670bb3648a84b9df8d16da25b85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Button_Basic2_15x15.png using Guid(35082ee2bb31c4a81bea04a13d829031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3695c0031f52aec210af30d873b67406') in 0.023671 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Model/Background/SimpleNaturePack/Models/Rock_05.fbx using Guid(fa2e670bb3648a84b9df8d16da25b85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a24da88f33d120f4e1567f30b71102a9') in 0.025683 seconds 
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Image_Auto.png
-  artifactKey: Guid(be13769fb2c554d778db3fb7bf3129fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000025 seconds.
+  path: Assets/Model/Background/SimpleNaturePack/Models/Rock_04.fbx
+  artifactKey: Guid(33ebf3440b12ec245bd008cd464f8d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Image_Auto.png using Guid(be13769fb2c554d778db3fb7bf3129fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '031e5cf3334aaaa8fb4cdf6359e67e06') in 0.022999 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Model/Background/SimpleNaturePack/Models/Rock_04.fbx using Guid(33ebf3440b12ec245bd008cd464f8d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d43b4eb01455ee65c0da22508398725') in 0.020109 seconds 
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Box_Icon1.png
-  artifactKey: Guid(5c54479b677fb42e0b03a1cbf4c44264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000012 seconds.
+  path: Assets/Model/Background/SimpleNaturePack/Models/Tree_01.fbx
+  artifactKey: Guid(6c7eaede4efc960409fb9ef2dfb77f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Box_Icon1.png using Guid(5c54479b677fb42e0b03a1cbf4c44264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b92ca3d1ae435dbe6ea6bb75766e17b') in 0.021679 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Button_Basic3_15x15.png
-  artifactKey: Guid(da7f7a4b60978489f9b0032ebf550ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Button_Basic3_15x15.png using Guid(da7f7a4b60978489f9b0032ebf550ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c451bd7abc17672a700a0c827669991') in 0.021623 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Button_Basic2_WS.png
-  artifactKey: Guid(f4c27653d5cca4acaa0e76a4d2e36a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Button_Basic2_WS.png using Guid(f4c27653d5cca4acaa0e76a4d2e36a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfe658eed3370037a94f5dbd8933d968') in 0.022243 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Model/Background/SimpleNaturePack/Models/Tree_01.fbx using Guid(6c7eaede4efc960409fb9ef2dfb77f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6287fa906ded5d34970e2dd35e05ab29') in 0.027643 seconds 
+Number of asset objects unloaded after import = 15
 ========================================================================
 Received Import Request.
   Time since last request: 0.000013 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Box_Icon2.png
-  artifactKey: Guid(cea34f2002dc14085aa8c546ab573884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  path: Assets/Model/Background/SimpleNaturePack/Models/Ground_03.fbx
+  artifactKey: Guid(661464e19c087564badb2bf5230c842c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/01_Box&Btn/Box_Icon2.png using Guid(cea34f2002dc14085aa8c546ab573884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8256b4bcad29fe287383c67b2f6d9b9') in 0.023139 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.725592 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/02_Box&Btn_White/Box_Basic2.png
-  artifactKey: Guid(ff996b4f2744d48d1b844bf2fe4f9204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/02_Box&Btn_White/Box_Basic2.png using Guid(ff996b4f2744d48d1b844bf2fe4f9204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5cc619f7725e2f92b57bd5c13d57fce') in 0.025003 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Model/Background/SimpleNaturePack/Models/Ground_03.fbx using Guid(661464e19c087564badb2bf5230c842c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '766c61c124ed81b39c32ccc835f1d053') in 0.020086 seconds 
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
   Time since last request: 0.000016 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/02_Box&Btn_White/Button_Basic1_White.png
-  artifactKey: Guid(8171a19e38e6d46fab66691470efd952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  path: Assets/Model/Background/SimpleNaturePack/Models/Stump_01.fbx
+  artifactKey: Guid(768be665aba8b4e4aae7a973ae9616cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/02_Box&Btn_White/Button_Basic1_White.png using Guid(8171a19e38e6d46fab66691470efd952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f198fd680a0daf02857c298373e7fab') in 0.023592 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Model/Background/SimpleNaturePack/Models/Stump_01.fbx using Guid(768be665aba8b4e4aae7a973ae9616cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13922a889ba1508b37a17f3bf122b9ad') in 0.024019 seconds 
+Number of asset objects unloaded after import = 15
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/02_Box&Btn_White/Button_Basic3_White_WS.png
-  artifactKey: Guid(a7d0077a8018d445eb05e173b86e071e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000011 seconds.
+  path: Assets/Model/Background/SimpleNaturePack/Models/Grass_02.fbx
+  artifactKey: Guid(638dc165572d2a84081d13ce1afb4d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/02_Box&Btn_White/Button_Basic3_White_WS.png using Guid(a7d0077a8018d445eb05e173b86e071e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5776bec8938cfff31fd37e19fedfdf7') in 0.022800 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Model/Background/SimpleNaturePack/Models/Grass_02.fbx using Guid(638dc165572d2a84081d13ce1afb4d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '483234455607c0f95afc092d681a35a5') in 0.025275 seconds 
+Number of asset objects unloaded after import = 15
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/02_Box&Btn_White/Button_Basic3_White.png
-  artifactKey: Guid(98c635c9b5efb42f6923a16d60b950ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000012 seconds.
+  path: Assets/Model/Background/SimpleNaturePack/Models/Ground_01.fbx
+  artifactKey: Guid(d4ad967689295ba4eaf8baeaebc8721b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/SPUM/Retro UI Set/1_UI_Images/Theme1/01_UI_Images/02_Box&Btn_White/Button_Basic3_White.png using Guid(98c635c9b5efb42f6923a16d60b950ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '016a3bb021f3521763664af3450eb340') in 0.022827 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Model/Background/SimpleNaturePack/Models/Ground_01.fbx using Guid(d4ad967689295ba4eaf8baeaebc8721b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02d8b049db35be7ded7b72e8c8de1f35') in 0.019499 seconds 
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Model/Background/SimpleNaturePack/Models/Rock_01.fbx
+  artifactKey: Guid(e9089b1db16b58f4282a94e020b9c0e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Model/Background/SimpleNaturePack/Models/Rock_01.fbx using Guid(e9089b1db16b58f4282a94e020b9c0e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb9137dbc6d59bc1c6a96b259b184a9') in 0.020705 seconds 
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Model/Background/SimpleNaturePack/Models/Flowers_01.fbx
+  artifactKey: Guid(b5a80b3e2a089b841b155d7c7f461e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Model/Background/SimpleNaturePack/Models/Flowers_01.fbx using Guid(b5a80b3e2a089b841b155d7c7f461e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b1aa12db18587f9c5abe93ab921465') in 0.026944 seconds 
+Number of asset objects unloaded after import = 15
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

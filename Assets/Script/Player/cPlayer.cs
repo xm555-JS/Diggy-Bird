@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+#pragma warning disable 0414
+
 public class cPlayer : MonoBehaviour
 {
     [SerializeField] FloatingJoystick joystick;
@@ -9,9 +11,11 @@ public class cPlayer : MonoBehaviour
     Rigidbody rigid;
     Animator anim;
     Vector2 input;
-    //int foodCount = 0;
+    int foodCount = 0;
     float speed = 5f;
     float fallingSpeed = 0.2f;
+
+    public int FoodCount { get => foodCount; set => foodCount += value; }
 
     void Start()
     {
@@ -19,6 +23,8 @@ public class cPlayer : MonoBehaviour
         rigid.freezeRotation = true;
 
         anim = GetComponent<Animator>();
+
+        foodCount = 0;
     }
 
     void Update()

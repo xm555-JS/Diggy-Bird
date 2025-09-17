@@ -63,19 +63,32 @@
     <Compile Include="Assets\Script\Ad\AdManager.cs" />
     <Compile Include="Assets\Script\Food\cFood.cs" />
     <Compile Include="Assets\Script\Player\cArea.cs" />
+    <Compile Include="Assets\Script\ObjectPool\PoolManger.cs" />
+    <Compile Include="Assets\Script\ObjectPool\FoodPool\FoodPoolManager.cs" />
     <Compile Include="Assets\Model\Player\Quirky Series - Birds Bundle\_Scripts\Demo.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Script\Block\cBlockManager.cs" />
+    <Compile Include="Assets\Script\ObjectPool\BlockPool\BlockPoolManager.cs" />
+    <Compile Include="Assets\Script\Particle\StopParticle.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\Script\ObjectPool\FoodPool\cFoodPool.cs" />
+    <Compile Include="Assets\Script\ObjectPool\ParticlePool\cParticlePool.cs" />
+    <Compile Include="Assets\Script\ObjectPool\PoolObject.cs" />
+    <Compile Include="Assets\Script\ObjectPool\BlockPool\cBlockPool.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Examples\JoystickSetterExample.cs" />
-    <Compile Include="Assets\Script\cResolution.cs" />
+    <Compile Include="Assets\Script\System\cResolution.cs" />
     <Compile Include="Assets\Script\UI\cSKillUI.cs" />
     <Compile Include="Assets\Script\Manager\GameManager.cs" />
     <Compile Include="Assets\Script\Block\cBlock.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Script\Player\cPlayer.cs" />
+    <Compile Include="Assets\Script\System\cFPS.cs" />
+    <Compile Include="Assets\Script\ObjectPool\ParticlePool\ParticlePoolManager.cs" />
     <Compile Include="Assets\Script\UI\cCooltime.cs" />
+    <Compile Include="Assets\Script\Camera\cCamera.cs" />
+    <Compile Include="Assets\Script\UI\cFoodAmount.cs" />
+    <Compile Include="Assets\Script\UI\cCheckAmount.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-10.4.2_manifest.txt" />
