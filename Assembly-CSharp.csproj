@@ -57,10 +57,12 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\UI\cFoodAmount.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Script\Manager\SkillManager.cs" />
     <Compile Include="Assets\Script\Ad\AdManager.cs" />
+    <Compile Include="Assets\Script\UI\cCheckAmount.cs" />
     <Compile Include="Assets\Script\Food\cFood.cs" />
     <Compile Include="Assets\Script\Player\cArea.cs" />
     <Compile Include="Assets\Script\ObjectPool\PoolManger.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="Assets\Script\ObjectPool\BlockPool\cBlockPool.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Script\System\cResolution.cs" />
+    <Compile Include="Assets\Script\Camera\cCamera.cs" />
     <Compile Include="Assets\Script\UI\cSKillUI.cs" />
     <Compile Include="Assets\Script\Manager\GameManager.cs" />
     <Compile Include="Assets\Script\Block\cBlock.cs" />
@@ -86,9 +89,6 @@
     <Compile Include="Assets\Script\System\cFPS.cs" />
     <Compile Include="Assets\Script\ObjectPool\ParticlePool\ParticlePoolManager.cs" />
     <Compile Include="Assets\Script\UI\cCooltime.cs" />
-    <Compile Include="Assets\Script\Camera\cCamera.cs" />
-    <Compile Include="Assets\Script\UI\cFoodAmount.cs" />
-    <Compile Include="Assets\Script\UI\cCheckAmount.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleMobileAds\GoogleMobileAds_version-10.4.2_manifest.txt" />

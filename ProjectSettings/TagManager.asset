@@ -8,6 +8,8 @@ TagManager:
   - Area
   - FoodParent
   - ParticleParent
+  - Ground
+  - Surface
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Food
   - Player
   - FoodMesh
-  - 
+  - Surface
   - 
   - 
   - 

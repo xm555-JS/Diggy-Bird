@@ -7,8 +7,6 @@ public class CustomEditorWindow : EditorWindow
     static CustomEditorWindow window;
 
     public static int currentBlock;
-
-    // Block
     cBlockManager blockManager;
 
     [MenuItem("Window/Editor/DebugWindow")]

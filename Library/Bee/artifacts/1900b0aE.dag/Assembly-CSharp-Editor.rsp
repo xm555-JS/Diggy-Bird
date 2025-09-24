@@ -374,6 +374,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Editor/CustomEditorWindow.cs"
+"Assets/Editor/CustomMapEditorWindow.cs"
 "Assets/Script/Player/Joystick Pack/Scripts/Editor/DynamicJoystickEditor.cs"
 "Assets/Script/Player/Joystick Pack/Scripts/Editor/FloatingJoystickEditor.cs"
 "Assets/Script/Player/Joystick Pack/Scripts/Editor/JoystickEditor.cs"
