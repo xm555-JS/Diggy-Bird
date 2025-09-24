@@ -13,7 +13,7 @@ public class cPlayer : MonoBehaviour
     Vector2 input;
     int foodCount = 0;
     float speed = 5f;
-    float fallingSpeed = 0.2f;
+    float fallingSpeed = 0.5f;
 
     public int FoodCount { get => foodCount; set => foodCount += value; }
 
@@ -24,17 +24,21 @@ public class cPlayer : MonoBehaviour
 
         anim = GetComponent<Animator>();
 
-        foodCount = 0;
+        foodCount = 9000;
     }
 
     void Update()
     {
         input = new Vector2(-joystick.input.x, -joystick.input.y);
         Vector3 forward = new Vector3(input.x, 0f, input.y);
-        //transform.forward = Vector3.Lerp(transform.forward, forward, Time.deltaTime * 3f);
         if (forward != Vector3.zero)
             transform.forward = forward;
         // 애니메이션 전환
+        AnimatorStateInfo animInfo = anim.GetCurrentAnimatorStateInfo(0);
+        if (animInfo.fullPathHash == Animator.StringToHash("Spin") ||
+            animInfo.fullPathHash == Animator.StringToHash("Roll"))
+            return;
+
         anim.SetFloat("isWalk", input.magnitude);
         anim.SetFloat("isFly", rigid.velocity.y);
     }
@@ -65,11 +69,18 @@ public class cPlayer : MonoBehaviour
 
     public void SpeedUp()
     {
+        anim.SetBool("isRoll", true);
         speed = 10f;
     }
 
     public void ReturnSpeed()
     {
+        anim.SetBool("isRoll", false);
         speed = 5f;
+    }
+
+    public void StartSpin()
+    {
+        anim.SetTrigger("isSpin");
     }
 }
