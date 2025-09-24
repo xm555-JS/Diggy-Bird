@@ -10,6 +10,7 @@ TagManager:
   - ParticleParent
   - Ground
   - Surface
+  - MapObjectParent
   layers:
   - Default
   - TransparentFX

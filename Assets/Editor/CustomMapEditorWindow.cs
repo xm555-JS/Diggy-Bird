@@ -7,11 +7,24 @@ using System.Collections.Generic;
 
 public class CustomMapEditorWindow : EditorWindow
 {
-    List<GameObject> treeList = new List<GameObject>();
-    GameObject defaultMap;
+    static List<GameObject> treeList = new List<GameObject>();
+    static List<GameObject> grassList = new List<GameObject>();
+    static List<GameObject> rockList = new List<GameObject>();
+    static List<GameObject> etcList = new List<GameObject>();
+
+    static GameObject defaultMap;
+    static GameObject parent;
+
     GameObject selectObj;
 
-    Vector2 scrollVec;
+    Vector2 treeScrollVec;
+    Vector2 grassScrollVec;
+    Vector2 rockScrollVec;
+    Vector2 etcScrollVec;
+
+    const float scrollHeight = 70f;
+    const float buttonWidth = 100f;
+    const float buttonHeight = 50f;
 
     [MenuItem("Window/Editor/MapWindow")]
     static void SetUp()
@@ -31,64 +44,14 @@ public class CustomMapEditorWindow : EditorWindow
 
     void OnGUI()
     {
-        // begin initialize
-        if (defaultMap == null)
-            Resources.Load<GameObject>("DefaultMap");
+        Initialize();
 
-        if (treeList.Count == 0)
-        {
-            GameObject[] objs = Resources.LoadAll<GameObject>("Tree");
-            foreach (var obj in objs)
-                treeList.Add(obj);
-        }
-        // end initialize
+        CreateDefaultMap();
 
-        // begin set "Default Map" button
-        GUILayout.Label("Default Map", EditorStyles.boldLabel);
-        if (GUILayout.Button("Create Default Map"))
-        {
-            Debug.Log("Create Default Map!");
-        }
-        GUILayout.Space(5f);
-        // end set "Default Map" button
-
-        // begin set "Tree" horizontal scroll view button
-        GUILayout.Label("Create Tree Object: ", EditorStyles.boldLabel);
-
-        float scrollHeight = 70f;
-        float buttonWidth = 100f;
-        float buttonHeight = 50f;
-
-        scrollVec = GUILayout.BeginScrollView(scrollVec, true, false, GUILayout.Height(scrollHeight));
-        GUILayout.BeginHorizontal(GUILayout.Width(buttonWidth * treeList.Count));
-
-        foreach (var tree in treeList)
-        {
-            if (tree == null) continue;
-
-            Texture2D preview = AssetPreview.GetAssetPreview(tree) ?? Texture2D.grayTexture;
-            Rect rect = GUILayoutUtility.GetRect(buttonWidth, buttonHeight);
-
-            if (Event.current.type == EventType.MouseDrag && rect.Contains(Event.current.mousePosition))
-            {
-                //Debug.Log("드래그 시작!");
-                DragAndDrop.PrepareStartDrag();
-                DragAndDrop.objectReferences = new Object[] { tree };
-                DragAndDrop.StartDrag(tree.name);
-                Event.current.Use();
-            }
-
-            GUI.Button(rect, preview);
-            {
-                //Debug.Log(tree.name + " Create!");
-            }
-        }
-
-        GUILayout.EndHorizontal();
-        GUILayout.EndScrollView();
-
-        GUILayout.Space(5f);
-        // end set "Tree" horizontal scroll view button
+        SetScroll("Create Tree Object: ", ref treeScrollVec, treeList);
+        SetScroll("Create Grass Object: ", ref grassScrollVec, grassList);
+        SetScroll("Create Rock Object: ", ref rockScrollVec, rockList);
+        SetScroll("Create Etc Object: ", ref etcScrollVec, etcList);
     }
 
     void OnSceneGUI(SceneView sceneView)
@@ -111,15 +74,16 @@ public class CustomMapEditorWindow : EditorWindow
             if (selectObj != null)
             {
                 Ray ray = HandleUtility.GUIPointToWorldRay(e.mousePosition);
-                LayerMask layerMast = 1 << LayerMask.NameToLayer("Surface");
-                if (Physics.Raycast(ray, out RaycastHit hit, layerMast))
-                {
+                LayerMask layerMask = 1 << LayerMask.NameToLayer("Surface");
+                if (Physics.Raycast(ray, out RaycastHit hit, 100f, layerMask))
                     selectObj.transform.position = hit.point;
-                }
                 else
-                {
-                    selectObj.transform.position = ray.GetPoint(10f); // 히트 없으면 카메라 앞
-                }
+                    selectObj.transform.position = ray.GetPoint(10f);
+
+                if (e.keyCode == KeyCode.Q)
+                    Debug.Log("Q");
+                if (e.type == EventType.KeyDown)
+                    Debug.Log("KeyDown");
             }
             e.Use();
         }
@@ -132,39 +96,15 @@ public class CustomMapEditorWindow : EditorWindow
                 GameObject prefab = obj as GameObject;
                 if (prefab != null)
                 {
-                    //Ray ray = HandleUtility.GUIPointToWorldRay(e.mousePosition);
-                    //LayerMask layerMast = 1 << LayerMask.NameToLayer("Surface");
-
-                    //GameObject instance = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
-                    //Undo.RegisterCreatedObjectUndo(instance, "Tree");
-                    //if (Physics.Raycast(ray, out RaycastHit hit, layerMast))
-                    //{
-                    //    instance.transform.position = hit.point;
-                    //}
-                    //else
-                    //{
-                    //    instance.transform.position = ray.GetPoint(10f); // 히트 없으면 카메라 앞
-                    //}
-                    //Selection.activeObject = instance;
-
                     Ray ray = HandleUtility.GUIPointToWorldRay(e.mousePosition);
                     Vector3 pos = selectObj ? selectObj.transform.position : ray.GetPoint(10f);
 
                     GameObject instance = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
                     Undo.RegisterCreatedObjectUndo(instance, "Tree");
                     instance.transform.position = pos;
+                    instance.transform.SetParent(parent.transform);
                     Selection.activeObject = instance;
                 }
-
-
-                //GameObject dragObj = obj as GameObject;
-                //if (dragObj != null)
-                //{
-                //    Ray ray = HandleUtility.GUIPointToWorldRay(e.mousePosition);
-                //    LayerMask layerMast = 1 << LayerMask.NameToLayer("Surface");
-                //    if (Physics.Raycast(ray, out RaycastHit hit, layerMast))
-                //        dragObj.transform.position = hit.point;
-                //}
             }
 
             if (selectObj != null)
@@ -176,13 +116,96 @@ public class CustomMapEditorWindow : EditorWindow
             e.Use();
         }
     }
+
+    void SetScroll(string name, ref Vector2 scrollVec, List<GameObject> objectList)
+    {
+        GUILayout.Label(name, EditorStyles.boldLabel);
+
+        scrollVec = GUILayout.BeginScrollView(scrollVec, true, false, GUILayout.Height(scrollHeight));
+        GUILayout.BeginHorizontal(GUILayout.Width(buttonWidth * treeList.Count));
+
+        foreach (var obj in objectList)
+        {
+            if (obj == null) continue;
+
+            Texture2D preview = AssetPreview.GetAssetPreview(obj) ?? Texture2D.grayTexture;
+            Rect rect = GUILayoutUtility.GetRect(buttonWidth, buttonHeight);
+
+            if (Event.current.type == EventType.MouseDrag && rect.Contains(Event.current.mousePosition))
+            {
+                DragAndDrop.PrepareStartDrag();
+                DragAndDrop.objectReferences = new Object[] { obj };
+                DragAndDrop.StartDrag(obj.name);
+                Event.current.Use();
+            }
+
+            GUI.Button(rect, preview);
+        }
+
+        GUILayout.EndHorizontal();
+        GUILayout.EndScrollView();
+
+        GUILayout.Space(5f);
+    }
+
+    void CreateDefaultMap()
+    {
+        GUILayout.Label("Default Map", EditorStyles.boldLabel);
+        if (GUILayout.Button("Create Default Map"))
+        {
+            GameObject map = (GameObject)PrefabUtility.InstantiatePrefab(defaultMap);
+            if (map == null)
+            {
+                Debug.Log("설마 여기라고?");
+                return;
+            }   
+
+            GameObject parentMap = GameObject.Find("Surface");
+            if (!parentMap)
+            {
+                Debug.LogError("여기 null이에용");
+                return;
+            }
+            map.transform.SetParent(parentMap.transform);
+            map.transform.position = Vector3.zero;
+        }
+        GUILayout.Space(5f);
+    }
+
+    void Initialize()
+    {
+        if (parent == null)
+            parent = GameObject.FindWithTag("MapObjectParent");
+
+        if (defaultMap == null)
+            defaultMap = Resources.Load<GameObject>("DefaultMap/DefaultMap");
+
+        if (treeList.Count == 0)
+        {
+            GameObject[] objs = Resources.LoadAll<GameObject>("Tree");
+            foreach (var obj in objs)
+                treeList.Add(obj);
+        }
+
+        if (grassList.Count == 0)
+        {
+            GameObject[] objs = Resources.LoadAll<GameObject>("Grass");
+            foreach (var obj in objs)
+                grassList.Add(obj);
+        }
+
+        if (rockList.Count == 0)
+        {
+            GameObject[] objs = Resources.LoadAll<GameObject>("Rock");
+            foreach (var obj in objs)
+                rockList.Add(obj);
+        }
+
+        if (etcList.Count == 0)
+        {
+            GameObject[] objs = Resources.LoadAll<GameObject>("Etc");
+            foreach (var obj in objs)
+                etcList.Add(obj);
+        }
+    }
 }
-
-    //void InstanceObj(GameObject obj)
-    //{
-    //    GameObject instanceObj = (GameObject)PrefabUtility.InstantiatePrefab(obj);
-    //    selectObj = instanceObj;
-
-    //    Undo.RegisterCreatedObjectUndo(instanceObj, obj.name);
-    //    Selection.activeObject = instanceObj;
-    //}
