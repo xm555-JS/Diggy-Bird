@@ -35,6 +35,8 @@ public class cBlock : MonoBehaviour
 
         if (collision.collider.CompareTag("Player"))
         {
+            AudioManager.instance.PlayerSfx(AudioManager.Sfx.POP);
+
             InstanteFood();
 
             InstanteParticle();

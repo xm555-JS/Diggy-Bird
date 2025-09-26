@@ -24,7 +24,7 @@ public class cPlayer : MonoBehaviour
 
         anim = GetComponent<Animator>();
 
-        foodCount = 9000;
+        foodCount = 0;
     }
 
     void Update()
@@ -57,6 +57,8 @@ public class cPlayer : MonoBehaviour
 
     public void OnAreaCollider()
     {
+        AudioManager.instance.PlayerSfx(AudioManager.Sfx.MAGNETIC);
+
         SphereCollider collider = area.GetComponent<SphereCollider>();
         collider.enabled = true;
     }
@@ -69,6 +71,8 @@ public class cPlayer : MonoBehaviour
 
     public void SpeedUp()
     {
+        AudioManager.instance.PlayerSfx(AudioManager.Sfx.HASTE);
+
         anim.SetBool("isRoll", true);
         speed = 10f;
     }

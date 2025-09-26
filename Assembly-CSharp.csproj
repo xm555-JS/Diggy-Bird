@@ -71,10 +71,12 @@
     <Compile Include="Assets\Script\Player\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Script\Block\cBlockManager.cs" />
     <Compile Include="Assets\Script\ObjectPool\BlockPool\BlockPoolManager.cs" />
+    <Compile Include="Assets\Script\Audio\AudioManager.cs" />
     <Compile Include="Assets\Script\Particle\StopParticle.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\Script\ObjectPool\FoodPool\cFoodPool.cs" />
+    <Compile Include="Assets\Script\UI\ButtonAudio.cs" />
     <Compile Include="Assets\Script\ObjectPool\ParticlePool\cParticlePool.cs" />
     <Compile Include="Assets\Script\ObjectPool\PoolObject.cs" />
     <Compile Include="Assets\Script\ObjectPool\BlockPool\cBlockPool.cs" />

@@ -12,5 +12,7 @@ public class GameManager : MonoBehaviour
         Application.targetFrameRate = 60;
 
         instance = this;
+
+        AudioManager.instance.StartBgm();
     }
 }

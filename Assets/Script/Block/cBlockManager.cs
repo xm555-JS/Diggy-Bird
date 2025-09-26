@@ -117,13 +117,18 @@ public class cBlockManager : MonoBehaviour
     {
         yield return new WaitUntil(() => surfaceBlocks.Count > 0);
         DestroyBlock();
+        AudioManager.instance.PlayerSfx(AudioManager.Sfx.DIGGY);
         yield return new WaitUntil(() => surfaceBlocks.Count > 0);
         DestroyBlock();
+        AudioManager.instance.PlayerSfx(AudioManager.Sfx.DIGGY);
         yield return new WaitUntil(() => surfaceBlocks.Count > 0);
         DestroyBlock();
+        AudioManager.instance.PlayerSfx(AudioManager.Sfx.DIGGY);
         yield return new WaitUntil(() => surfaceBlocks.Count > 0);
         DestroyBlock();
+        AudioManager.instance.PlayerSfx(AudioManager.Sfx.DIGGY);
         yield return new WaitUntil(() => surfaceBlocks.Count > 0);
         DestroyBlock();
+        AudioManager.instance.PlayerSfx(AudioManager.Sfx.DIGGY);
     }
 }

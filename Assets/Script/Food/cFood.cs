@@ -51,6 +51,8 @@ public class cFood : MonoBehaviour
     {
         if (other.CompareTag("Player") && isEat)
         {
+            AudioManager.instance.PlayerSfx(AudioManager.Sfx.EAT, 0.3f);
+
             isVacuum = false;
             isEat = false;
             GameManager.instance.player.FoodCount = 1;
