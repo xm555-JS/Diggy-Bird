@@ -100,7 +100,7 @@ public class cBlockManager : MonoBehaviour
         foreach (var block in surfaceBlocks)
         {
             cBlock blockCom = block.GetComponent<cBlock>();
-            //blockCom.InstanteFood();
+            blockCom.InstanteFood();
             blockCom.InstanteParticle();
             blockCom.OnDestroyed -= HandleBlockDestory;
             Destroy(block);
