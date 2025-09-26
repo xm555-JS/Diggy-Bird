@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using GoogleMobileAds.Api;
+using System;
 
 public class AdManager : MonoBehaviour
 {
@@ -13,36 +12,38 @@ public class AdManager : MonoBehaviour
         MobileAds.Initialize((InitializationStatus initiStatus) => { });
 
         // ±¤°í ÁØºñ
-        Load();
+        LoadReward();
     }
 
-    void Load()
+    void LoadReward()
     {
         var adRequest = new AdRequest();
         RewardedAd.Load("ca-app-pub-3940256099942544/5224354917", adRequest, (RewardedAd ad, LoadAdError error) =>
         {
-            if (error != null)
-                Debug.Log("±¤°í·Îµå ½ÇÆÐ!");
+            if (error != null || ad == null)
+            {
+                Debug.Log("±¤°í·Îµå ½ÇÆÐ!" + error);
+                return;
+            }
 
             rewardAd = ad;
             rewardAd.OnAdFullScreenContentClosed += () =>
             {
                 rewardAd.Destroy();
-                Load();
+                LoadReward();
             };
         });
     }
 
-    public void ShowDiggyAd()
+    void ShowRewardedAd(Action onReward)
     {
-        rewardAd.Show((Reward reward) => { SkillManager.instance.DiggySkillUp(); });
+        if (rewardAd != null && rewardAd.CanShowAd())
+            rewardAd.Show((Reward reward) => onReward?.Invoke());
+        else
+            Debug.Log("±¤°í ÁØºñ ¾ÈµÊ");
     }
-    public void ShowMagneticAd()
-    {
-        rewardAd.Show((Reward reward) => { SkillManager.instance.MagneticSkillUp(); });
-    }
-    public void ShowHasteAd()
-    {
-        rewardAd.Show((Reward reward) => { SkillManager.instance.HasteSkillUp(); });
-    }
+
+    public void ShowDiggyAd() => ShowRewardedAd(() => SkillManager.instance.DiggySkillUp());
+    public void ShowMagneticAd() => ShowRewardedAd(() => SkillManager.instance.MagneticSkillUp());
+    public void ShowHasteAd() => ShowRewardedAd(() => SkillManager.instance.HasteSkillUp());
 }
