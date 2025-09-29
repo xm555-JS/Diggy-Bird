@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 #pragma warning disable 0414
 
@@ -33,6 +34,10 @@ public class cPlayer : MonoBehaviour
         anim = GetComponent<Animator>();
 
         foodCount = PlayerPrefs.GetInt("Food");
+
+        bool isSave = Convert.ToBoolean(PlayerPrefs.GetInt("IsSave"));
+        if (isSave)
+            transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerPosX"), PlayerPrefs.GetFloat("PlayerPosY") + 1f, PlayerPrefs.GetFloat("PlayerPosZ"));
     }
 
     void Update()
@@ -94,5 +99,12 @@ public class cPlayer : MonoBehaviour
     public void StartSpin()
     {
         anim.SetTrigger("isSpin");
+    }
+
+    void OnApplicationQuit()
+    {
+        PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
+        PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
+        PlayerPrefs.SetFloat("PlayerPosZ", transform.position.z);
     }
 }
