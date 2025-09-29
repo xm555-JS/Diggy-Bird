@@ -15,7 +15,15 @@ public class cPlayer : MonoBehaviour
     float speed = 5f;
     float fallingSpeed = 0.5f;
 
-    public int FoodCount { get => foodCount; set => foodCount += value; }
+    public int FoodCount
+    {
+        get => foodCount;
+        set
+        {
+            foodCount += value;
+            PlayerPrefs.SetInt("Food", foodCount);
+        }
+    }
 
     void Start()
     {
@@ -24,7 +32,7 @@ public class cPlayer : MonoBehaviour
 
         anim = GetComponent<Animator>();
 
-        foodCount = 0;
+        foodCount = PlayerPrefs.GetInt("Food");
     }
 
     void Update()

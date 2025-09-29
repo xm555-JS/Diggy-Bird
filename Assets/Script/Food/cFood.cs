@@ -13,15 +13,18 @@ public class cFood : MonoBehaviour
 
     public void setVaccum(bool value) { isVacuum = value; }
 
-    void Start()
+    void Awake()
+    {
+        rigid = GetComponent<Rigidbody>();
+        boxCollider = GetComponent<BoxCollider>();
+    }
+
+    void OnEnable()
     {
         float rotate = Random.Range(0f, 359f);
         transform.Rotate(new Vector3(0f, rotate, 0f));
 
-        rigid = GetComponent<Rigidbody>();
         rigid.AddForce(Vector3.up * power, ForceMode.Impulse);
-
-        boxCollider = GetComponent<BoxCollider>();
         boxCollider.enabled = false;
     }
 
@@ -36,6 +39,8 @@ public class cFood : MonoBehaviour
             if (Physics.Raycast(transform.position, Vector3.down, 0.5f, LayerMask.GetMask("Ground")))
                 isEat = true;
         }
+        if (time > 30f)
+            ResetFood();
     }
 
     void FixedUpdate()
@@ -53,10 +58,16 @@ public class cFood : MonoBehaviour
         {
             AudioManager.instance.PlayerSfx(AudioManager.Sfx.EAT, 0.3f);
 
-            isVacuum = false;
-            isEat = false;
             GameManager.instance.player.FoodCount = 1;
-            cFoodPool.pool.Release(gameObject);
+            ResetFood();
         }
+    }
+
+    void ResetFood()
+    {
+        isVacuum = false;
+        isEat = false;
+        time = 0f;
+        cFoodPool.pool.Release(gameObject);
     }
 }

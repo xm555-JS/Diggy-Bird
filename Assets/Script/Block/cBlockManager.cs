@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class cBlockManager : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class cBlockManager : MonoBehaviour
     const int blockRow = 5;
     const int surfaceBlockCount = 45;
     const int halfLine = 182;
-
+    int test = 0;
     int maxLine = 0;
     int curLine = 0;
 
@@ -26,14 +27,31 @@ public class cBlockManager : MonoBehaviour
 
     void Start()
     {
-        for (int line = 0; line < blockLine; line++)
-            InstanceBlock(line);
+        bool isSave = Convert.ToBoolean(PlayerPrefs.GetInt("IsSave"));
+        if (isSave)
+        {
+            curLine = PlayerPrefs.GetInt("CurLine");
+            maxLine = PlayerPrefs.GetInt("MaxLine");
 
-        maxLine = blockLine;
+            LoadSurfaceBlock();
+            for (int line = curLine + 1; line < maxLine; line++)
+                LoadOtherBlock(line);
 
-        SetSurfaceBlock();
+            SetSurfaceBlock(test);
 
-        StartCoroutine(ReloadBlocks());
+            StartCoroutine(ReloadBlocks());
+        }
+        else
+        {
+            for (int line = 0; line < blockLine; line++)
+                InstanceBlock(line);
+
+            maxLine = blockLine;
+
+            SetSurfaceBlock();
+
+            StartCoroutine(ReloadBlocks());
+        }
     }
 
     void InstanceBlock(int line)
@@ -50,9 +68,47 @@ public class cBlockManager : MonoBehaviour
         }
     }
 
-    void SetSurfaceBlock()
+    void LoadSurfaceBlock()
     {
-        for (int i = 0; i < surfaceBlockCount; i++)
+        cBlockJson json = new cBlockJson();
+        List<BlockData> data = new List<BlockData>();
+        data = json.LoadBlockData();
+        if (data == null)
+        { 
+            Debug.LogError("json data is null");
+            return;
+        }
+
+        foreach (var obj in data)
+        {
+            GameObject instBlock = BlockPoolManager.instance.Get();
+            instBlock.transform.SetParent(blockParent.transform);
+            instBlock.transform.position = new Vector3(obj.surfacePosX, obj.surfacePosY, obj.surfacePosZ);
+            allBlocks.Enqueue(instBlock);
+            test++;
+        }
+    }
+
+    void LoadOtherBlock(int line)
+    {
+        for (int row = 0; row < blockRow; row++)
+        {
+            for (int colum = 0; colum < blockColum; colum++)
+            {
+                GameObject instBlock = BlockPoolManager.instance.Get();
+                instBlock.transform.SetParent(blockParent.transform);
+                instBlock.transform.position = new Vector3(-16.49f - (colum * 3f), 0f - (line * 0.2f), 1.48f + (row * 3f));
+                allBlocks.Enqueue(instBlock);
+            }
+        }
+
+        cBlockJson json = new cBlockJson();
+        json.CleanData();
+    }
+
+    void SetSurfaceBlock(int count = 45)
+    {
+        for (int i = 0; i < count; i++)
         {
             GameObject surfaceBlock = allBlocks.Dequeue();
             cBlock block = surfaceBlock.GetComponent<cBlock>();
@@ -130,5 +186,16 @@ public class cBlockManager : MonoBehaviour
         yield return new WaitUntil(() => surfaceBlocks.Count > 0);
         DestroyBlock();
         AudioManager.instance.PlayerSfx(AudioManager.Sfx.DIGGY);
+        AudioManager.instance.PlayerSfx(AudioManager.Sfx.DIGGY);
+    }
+
+    void OnApplicationQuit()
+    {
+        PlayerPrefs.SetInt("IsSave", 1);
+        PlayerPrefs.SetInt("MaxLine", maxLine);
+        PlayerPrefs.SetInt("CurLine", curLine);
+
+        cBlockJson json = new cBlockJson();
+        json.SaveBlockData(surfaceBlocks);
     }
 }
