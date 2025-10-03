@@ -5,6 +5,9 @@ using System;
 public class AdManager : MonoBehaviour
 {
     RewardedAd rewardAd;
+    Action intervalRewardAction;
+
+    const float oneHour = 3600f;
 
     void Start()
     {
@@ -13,6 +16,9 @@ public class AdManager : MonoBehaviour
 
         // 광고 준비
         LoadReward();
+
+        // 1시간이 지나면 다시 Load
+        InvokeRepeating("RefreshRewardAd", oneHour, oneHour);
     }
 
     void LoadReward()
@@ -27,11 +33,20 @@ public class AdManager : MonoBehaviour
             }
 
             rewardAd = ad;
+
+            // 광고창을 닫았을 때
             rewardAd.OnAdFullScreenContentClosed += () =>
             {
                 rewardAd.Destroy();
                 LoadReward();
             };
+
+            // 광고 실행이 되지 않았을 때
+            if (intervalRewardAction != null)
+            {
+                rewardAd.Show((Reward reward) => intervalRewardAction?.Invoke());
+                intervalRewardAction = null;
+            }
         });
     }
 
@@ -40,7 +55,19 @@ public class AdManager : MonoBehaviour
         if (rewardAd != null && rewardAd.CanShowAd())
             rewardAd.Show((Reward reward) => onReward?.Invoke());
         else
-            Debug.Log("광고 준비 안됨");
+        {
+            intervalRewardAction = onReward;
+            LoadReward();
+        }
+    }
+
+    void RefreshRewardAd()
+    {
+        if (rewardAd != null)
+        {
+            rewardAd.Destroy();
+            LoadReward();
+        }
     }
 
     public void ShowDiggyAd() => ShowRewardedAd(() => SkillManager.instance.DiggySkillUp());
