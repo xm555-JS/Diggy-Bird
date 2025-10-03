@@ -33,11 +33,18 @@ public class cPlayer : MonoBehaviour
 
         anim = GetComponent<Animator>();
 
-        foodCount = PlayerPrefs.GetInt("Food");
+        //foodCount = PlayerPrefs.GetInt("Food");
 
-        bool isSave = Convert.ToBoolean(PlayerPrefs.GetInt("IsSave"));
-        if (isSave)
-            transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerPosX"), PlayerPrefs.GetFloat("PlayerPosY") + 1f, PlayerPrefs.GetFloat("PlayerPosZ"));
+        //bool isSave = Convert.ToBoolean(PlayerPrefs.GetInt("IsSave"));
+        //if (isSave)
+        //    transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerPosX"), PlayerPrefs.GetFloat("PlayerPosY") + 1f, PlayerPrefs.GetFloat("PlayerPosZ"));
+        cPlayerJsonData jsondata = new cPlayerJsonData();
+        PlayerData data = jsondata.LoadPlayerData();
+        if (data != null)
+        {
+            transform.position = new Vector3(data.posX, data.posY + 2f, data.posZ);
+            foodCount = data.foodCount;
+        }
     }
 
     void Update()
@@ -103,8 +110,25 @@ public class cPlayer : MonoBehaviour
 
     void OnApplicationQuit()
     {
-        PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
-        PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
-        PlayerPrefs.SetFloat("PlayerPosZ", transform.position.z);
+        //PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
+        //PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
+        //PlayerPrefs.SetFloat("PlayerPosZ", transform.position.z);
+        cPlayerJsonData jsondata = new cPlayerJsonData();
+        jsondata.SavePlayerData(transform, foodCount);
+    }
+
+    void OnApplicationPause(bool pause)
+    {
+        if (pause)
+        {
+            //PlayerPrefs.SetFloat("PlayerPosX", transform.position.x);
+            //PlayerPrefs.SetFloat("PlayerPosY", transform.position.y);
+            //PlayerPrefs.SetFloat("PlayerPosZ", transform.position.z);
+
+            //PlayerPrefs.Save();
+
+            cPlayerJsonData jsondata = new cPlayerJsonData();
+            jsondata.SavePlayerData(transform, foodCount);
+        }
     }
 }

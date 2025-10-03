@@ -87,7 +87,9 @@
     <Compile Include="Assets\Script\Manager\PoolManger.cs" />
     <Compile Include="Assets\Script\UI\cCheckAmount.cs" />
     <Compile Include="Assets\Script\UI\cSKillUI.cs" />
+    <Compile Include="Assets\Script\Player\cPlayerJsonData.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Script\Manager\cSkillJsonData.cs" />
     <Compile Include="Assets\Script\Block\cBlockJson.cs" />
     <Compile Include="Assets\Script\Player\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\Script\Audio\AudioManager.cs" />

@@ -5,8 +5,6 @@ using System.IO;
 [System.Serializable]
 public class BlockData
 {
-    public int curLine;
-    public int maxLine;
     public float surfacePosX;
     public float surfacePosY;
     public float surfacePosZ;
@@ -18,9 +16,17 @@ public class BlockDataList
     public List<BlockData> DataList = new List<BlockData>();
 }
 
+[System.Serializable]
+public class LineData
+{
+    public int curLine;
+    public int maxLine;
+}
+
 public class cBlockJson
 {
     string path => Application.persistentDataPath + "block";
+    string linePath => Application.persistentDataPath + "Line";
 
     public void SaveBlockData(List<GameObject> blockList)
     {
@@ -55,5 +61,26 @@ public class cBlockJson
             return;
 
         File.Delete(path);
+    }
+
+    public void SaveLineData(int curLine, int maxLine)
+    {
+        LineData lineData = new LineData()
+        {
+            curLine = curLine,
+            maxLine = maxLine
+        };
+        string lineJson = JsonUtility.ToJson(lineData);
+        File.WriteAllText(linePath, lineJson);
+    }
+
+    public LineData LoadLineData()
+    {
+        if (!File.Exists(linePath))
+            return null;
+
+        string lineddata = File.ReadAllText(linePath);
+        LineData Data = JsonUtility.FromJson<LineData>(lineddata);
+        return Data;
     }
 }

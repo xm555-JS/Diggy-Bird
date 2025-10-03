@@ -30,8 +30,31 @@ public class SkillManager : MonoBehaviour
 
     void Start()
     {
-        diggySkill = PlayerPrefs.GetInt("diggySkill");
-        magneticSkill = PlayerPrefs.GetInt("magneticSkill");
-        hasteSkill = PlayerPrefs.GetInt("hasteSkill");
+        //diggySkill = PlayerPrefs.GetInt("diggySkill");
+        //magneticSkill = PlayerPrefs.GetInt("magneticSkill");
+        //hasteSkill = PlayerPrefs.GetInt("hasteSkill");
+        cSkillJsonData jsonData = new cSkillJsonData();
+        SkillData data = jsonData.LoadSkillData();
+        if (data != null)
+        {
+            diggySkill = data.diggySkill;
+            magneticSkill = data.magneticSkill;
+            hasteSkill = data.hasteSkill;
+        }
+    }
+
+    void OnApplicationQuit()
+    {
+        cSkillJsonData jsonData = new cSkillJsonData();
+        jsonData.SaveSkillData(diggySkill, magneticSkill, hasteSkill);
+    }
+
+    void OnApplicationPause(bool pause)
+    {
+        if (pause)
+        {
+            cSkillJsonData jsonData = new cSkillJsonData();
+            jsonData.SaveSkillData(diggySkill, magneticSkill, hasteSkill);
+        }
     }
 }

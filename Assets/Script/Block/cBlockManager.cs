@@ -15,9 +15,9 @@ public class cBlockManager : MonoBehaviour
     const int blockLine = 50;
     const int blockColum = 9;
     const int blockRow = 5;
-    const int surfaceBlockCount = 45;
     const int halfLine = 182;
-    int test = 0;
+
+    int existBlock = 0;
     int maxLine = 0;
     int curLine = 0;
 
@@ -27,17 +27,21 @@ public class cBlockManager : MonoBehaviour
 
     void Start()
     {
-        bool isSave = Convert.ToBoolean(PlayerPrefs.GetInt("IsSave"));
-        if (isSave)
+        //bool isSave = Convert.ToBoolean(PlayerPrefs.GetInt("IsSave"));
+        cBlockJson blockJson = new cBlockJson();
+        LineData data = blockJson.LoadLineData();
+        if (data != null)
         {
-            curLine = PlayerPrefs.GetInt("CurLine");
-            maxLine = PlayerPrefs.GetInt("MaxLine");
+            //curLine = PlayerPrefs.GetInt("CurLine");
+            //maxLine = PlayerPrefs.GetInt("MaxLine");
+            curLine = data.curLine;
+            maxLine = data.maxLine;
 
             LoadSurfaceBlock();
             for (int line = curLine + 1; line < maxLine; line++)
                 LoadOtherBlock(line);
 
-            SetSurfaceBlock(test);
+            SetSurfaceBlock(existBlock);
 
             StartCoroutine(ReloadBlocks());
         }
@@ -85,7 +89,7 @@ public class cBlockManager : MonoBehaviour
             instBlock.transform.SetParent(blockParent.transform);
             instBlock.transform.position = new Vector3(obj.surfacePosX, obj.surfacePosY, obj.surfacePosZ);
             allBlocks.Enqueue(instBlock);
-            test++;
+            existBlock++;
         }
     }
 
@@ -191,11 +195,28 @@ public class cBlockManager : MonoBehaviour
 
     void OnApplicationQuit()
     {
-        PlayerPrefs.SetInt("IsSave", 1);
-        PlayerPrefs.SetInt("MaxLine", maxLine);
-        PlayerPrefs.SetInt("CurLine", curLine);
+        //PlayerPrefs.SetInt("IsSave", 1);
+        //PlayerPrefs.SetInt("MaxLine", maxLine);
+        //PlayerPrefs.SetInt("CurLine", curLine);
+        //cBlockJson json = new cBlockJson();
+        //json.SaveBlockData(surfaceBlocks);
 
         cBlockJson json = new cBlockJson();
+        json.SaveLineData(curLine, maxLine);
         json.SaveBlockData(surfaceBlocks);
+    }
+
+    void OnApplicationPause(bool pause)
+    {
+        if (pause)
+        {
+
+            //PlayerPrefs.SetInt("IsSave", 1);
+            //PlayerPrefs.SetInt("MaxLine", maxLine);
+            //PlayerPrefs.SetInt("CurLine", curLine);
+            cBlockJson json = new cBlockJson();
+            json.SaveLineData(curLine, maxLine);
+            json.SaveBlockData(surfaceBlocks);
+        }
     }
 }
