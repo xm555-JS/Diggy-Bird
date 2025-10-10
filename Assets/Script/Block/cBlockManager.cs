@@ -7,6 +7,7 @@ public class cBlockManager : MonoBehaviour
 {
     [SerializeField] GameObject blockParent;
     [SerializeField] GameObject mantle;
+    [SerializeField] GameObject safetyArea;
     [SerializeField] GameObject[] grounds;
 
     Queue<GameObject> allBlocks = new Queue<GameObject>();
@@ -27,15 +28,21 @@ public class cBlockManager : MonoBehaviour
 
     void Start()
     {
-        //bool isSave = Convert.ToBoolean(PlayerPrefs.GetInt("IsSave"));
         cBlockJson blockJson = new cBlockJson();
         LineData data = blockJson.LoadLineData();
         if (data != null)
         {
-            //curLine = PlayerPrefs.GetInt("CurLine");
-            //maxLine = PlayerPrefs.GetInt("MaxLine");
             curLine = data.curLine;
             maxLine = data.maxLine;
+
+            mantle.transform.position = new Vector3(mantle.transform.position.x, mantle.transform.position.y - (0.2f * curLine), mantle.transform.position.z);
+            safetyArea.transform.position = new Vector3(safetyArea.transform.position.x, safetyArea.transform.position.y - (0.2f * curLine), safetyArea.transform.position.z);
+
+            if (curLine >= halfLine)
+            {
+                foreach (var ground in grounds)
+                    ground.transform.position = new Vector3(ground.transform.position.x, ground.transform.position.y - (0.2f * (curLine - halfLine)), ground.transform.position.z);
+            }
 
             LoadSurfaceBlock();
             for (int line = curLine + 1; line < maxLine; line++)
@@ -135,6 +142,7 @@ public class cBlockManager : MonoBehaviour
                 InstanceBlock(maxLine);
 
                 mantle.transform.position = new Vector3(mantle.transform.position.x, mantle.transform.position.y - 0.2f, mantle.transform.position.z);
+                safetyArea.transform.position = new Vector3(safetyArea.transform.position.x, safetyArea.transform.position.y - 0.2f, safetyArea.transform.position.z);
 
                 if (curLine >= halfLine)
                 {
@@ -195,12 +203,6 @@ public class cBlockManager : MonoBehaviour
 
     void OnApplicationQuit()
     {
-        //PlayerPrefs.SetInt("IsSave", 1);
-        //PlayerPrefs.SetInt("MaxLine", maxLine);
-        //PlayerPrefs.SetInt("CurLine", curLine);
-        //cBlockJson json = new cBlockJson();
-        //json.SaveBlockData(surfaceBlocks);
-
         cBlockJson json = new cBlockJson();
         json.SaveLineData(curLine, maxLine);
         json.SaveBlockData(surfaceBlocks);
@@ -210,10 +212,6 @@ public class cBlockManager : MonoBehaviour
     {
         if (pause)
         {
-
-            //PlayerPrefs.SetInt("IsSave", 1);
-            //PlayerPrefs.SetInt("MaxLine", maxLine);
-            //PlayerPrefs.SetInt("CurLine", curLine);
             cBlockJson json = new cBlockJson();
             json.SaveLineData(curLine, maxLine);
             json.SaveBlockData(surfaceBlocks);

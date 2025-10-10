@@ -11,7 +11,7 @@ public class SkillData
     public int hasteSkill;
 }
 
-public class cSkillJsonData : MonoBehaviour
+public class cSkillJsonData
 {
     string skillPath => Application.persistentDataPath + "Skill";
 

@@ -63,6 +63,12 @@ public class cFood : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("SafetyArea"))
+            ResetFood();
+    }
+
     void ResetFood()
     {
         isVacuum = false;

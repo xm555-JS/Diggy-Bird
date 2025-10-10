@@ -11,7 +11,7 @@ public class PlayerData
     public int foodCount;
 }
 
-public class cPlayerJsonData : MonoBehaviour
+public class cPlayerJsonData
 {
     string playerPath => Application.persistentDataPath + "Player";
     public void SavePlayerData(Transform playerPos, int foodCount)
