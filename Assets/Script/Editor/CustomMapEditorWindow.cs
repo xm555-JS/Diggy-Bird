@@ -155,15 +155,16 @@ public class CustomMapEditorWindow : EditorWindow
         {
             GameObject map = (GameObject)PrefabUtility.InstantiatePrefab(defaultMap);
             if (map == null)
-            {
-                Debug.Log("설마 여기라고?");
                 return;
-            }   
+
+            int layer = LayerMask.NameToLayer("Surface");
+            foreach (Transform child in map.transform)
+                child.gameObject.layer = layer;
 
             GameObject parentMap = GameObject.Find("Surface");
             if (!parentMap)
             {
-                Debug.LogError("여기 null이에용");
+                Debug.LogError("parentMap is null");
                 return;
             }
             map.transform.SetParent(parentMap.transform);
