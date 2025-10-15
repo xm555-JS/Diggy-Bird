@@ -7,7 +7,7 @@
 - 개발 목적
     * 노동력이 필요한 땅파기류 게임을 간단하게 만드는 것이 목적이며
     * 플레이스토에어서 Admob을 이용하여 광고를 게임에 추가해보는 것
-- [시연 영상 보기](https://www.youtube.com/watch?v=7Kf91ijtl3o)
+- [시연 영상 보기](https://youtu.be/sq_TLDmVvwY)
 
 ## 주요 기능
 - 커스텀 맵 에디터 : 커스텀 에디터를 이용하여 보다 더 효율적이게 맵을 만들 수 있게 구현 
@@ -20,6 +20,3 @@
 - Unity 2022.3.62f1 (3D)
 - C#
 - Git, Github
-
-## 포트폴리오 PPT
-[Dots Dungeon 프로젝트 PPT](https://drive.google.com/file/d/1JlLu_u87qEz1iCbtmUi8jJMlRICsuUkF/view?usp=sharing)
